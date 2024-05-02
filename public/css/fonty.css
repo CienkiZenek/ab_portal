@@ -1,0 +1,30 @@
+
+.inter {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: normal;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0;
+        }
+
+@font-face {
+    font-family: 'LatoRegular';
+    url('fonts/lato/Lato-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'CormorantRegular';
+url('fonts/cormorant/Cormorant-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+
+

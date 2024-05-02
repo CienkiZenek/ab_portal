@@ -1,0 +1,160 @@
+body
+{
+    font-family: 'LatoRegular', sans-serif;
+    /*font-family: 'CormorantRegular', serif;*/
+    font-optical-sizing: auto;
+
+}
+/* glówne*/
+.color-glowny{
+    color: #3F51B5;
+}
+.color-glowny8{
+    color: #283593;
+}
+
+.color-przyklejone{
+    color: #3F51B5;
+}
+.tlo-nav {
+    background-color:#3F51B5;
+}
+
+.tlo-footer {
+    background-color:#3F51B5;
+}
+.tlo-glowne{
+    background-color:#3F51B5;
+}
+
+.tlo-przycisk{
+    background-color:#7986CB;
+}
+
+
+/*background-color:#3F51B5;*/
+.tlo-glowne0{
+    background-color:#E8EAF6;
+}
+.tlo-glowne1{
+    background-color:#C5CAE9;
+}
+#komunikat{
+
+    visibility: visible;
+}
+
+.tlo-biale
+{
+    background: #ffffff;
+}
+
+.nieWidzialne{
+    visibility: hidden;
+}
+
+/* */
+.tlo-karuzela{
+
+}
+.h1_glowna {
+    background-color:#E8EAF6;
+}
+.h1_podstrony {
+
+}
+
+
+
+
+.stopka-copy
+{
+    background:#F6F9FF;
+
+    padding: 15px 0 1px 0 ;
+}
+
+
+.social-links a {
+    font-size: 25px;
+    display: inline-block;
+    color: rgba(1, 41, 112, 0.5);
+    line-height: 0;
+    margin-right: 10px;
+    transition: 0.3s;
+
+}
+.social-links a:hover {
+    color: #012970;
+}
+.footer-links {
+    margin-bottom: 30px;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-links ul i {
+    padding-right: 2px;
+    color: #d0d4fc;
+    font-size: 12px;
+    line-height: 0;
+}
+.footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.footer-links ul li:first-child {
+    padding-top: 0;
+}
+.footer-links ul a {
+    color: #013289;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+}
+.footer-links ul a:hover {
+    color: #4154f1;
+}
+
+
+/* formatowanie wyświetlanych wiadomości, artykułów i biografii */
+.akapit
+{
+text-indent: 1em;
+}
+
+.srodtytul
+{
+text-align: center;
+    font-size:larger;
+    font-weight: bolder;
+}
+
+/* ksiazka, modlitwy*/
+.tytul {
+font-weight: bold;
+    font-size: large;
+}
+
+.pod-tytul {
+    font-weight: bold;
+    font-size: small;
+}
+
+.akapit {
+text-indent: 1rem;
+    text-align: justify;
+}
+.brewiarz_h2{
+    font-size: x-large;
+    text-align: center;
+}
+
+.brewiarz_h3{
+    font-size: large;
+    text-align: center;
+}

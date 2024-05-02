@@ -1,0 +1,1 @@
+modlitwa...o nawrócenie

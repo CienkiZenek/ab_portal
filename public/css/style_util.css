@@ -1,0 +1,81 @@
+.js-cookie-consent{
+    position: page;
+    top: 0;
+    z-index: 9999;
+}
+.js-cookie-consent-agree{
+
+    text-align: center;
+    cursor: pointer;
+
+}
+/* toTop https://www.w3schools.com/howto/howto_js_scroll_to_top.asp  */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+
+    outline: none; /* Remove outline */
+    background-color: #5C6BC0; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: white solid 3px;
+}
+
+#myBtn:hover {
+    background-color: #303F9F; /* Add a dark-grey background on hover */
+}
+/* end  toTop  */
+
+
+#btnDol {
+    display: block; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 40px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+
+    outline: none; /* Remove outline */
+    /*background-color: #6dc2ff;*/ /* Set a background color */
+    background-color: #5C6BC0; /* Set a background color */
+    border: white solid 3px;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#btnDol:hover {
+    background-color: #303F9F; /* Add a dark-grey background on hover */
+}
+
+#stronaGlIdzDo {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 85px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+
+    outline: none; /* Remove outline */
+    background-color: #5C6BC0; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    /*border-color: white;
+    border-width: 5px;
+    border-style: solid;*/
+    border: white solid 3px;
+    font-size: 18px; /* Increase font size */
+
+}
+#stronaGlIdzDo:hover {
+    background-color: #303F9F; /* Add a dark-grey background on hover */
+}

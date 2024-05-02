@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:/szukaj/
+Disallow:/szukaj
+
+Sitemap: https://andrzejbobola.info/sitemap.xml
