@@ -3,8 +3,6 @@
 @section('description', 'Portal poświęcony św. Andrzejowi Boboli')
 @section('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych')
 @section('tresc')
-    aaaaaaa
-{{--
 
 
     <div class="row text-center  mt-2 mb-3   ">
@@ -169,6 +167,5 @@
 
 @include('dodatki.ksiazkaGlowna')
 
---}}
 
 @endsection

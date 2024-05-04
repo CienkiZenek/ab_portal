@@ -9,17 +9,7 @@
     <meta name="keywords" content="@yield('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych, relikwie')">
     <title>@yield('title', 'AndrzejBobola.info')</title>
     <link rel="icon" type="image/png" sizes="48x48"   href="{{ URL::asset('/stat/favicon2.webp')}}">
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-    {{--<script async src="https://www.googletagmanager.com/gtag/js?id=G-4G7JJM3GW8"></script>
-    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4G7JJM3GW8');
-    </script>--}}
 
-    {{--Open Graph dane dla facebooka i Twittera przy udostepnianiu--}}
 
     <meta property="og:url"           content="@yield('og_url', 'https://AndrzejBobola.info')" />
     <meta property="og:type"           content="@yield('og_type', 'website')" />
@@ -27,14 +17,8 @@
     <meta property="og:description"   content="@yield('og_description', 'Portal poświęcony św. Andrzejowi Boboli')" />
     <meta property="og:image"         content="@yield('og_image', 'https://AndrzejBobola.info/stat/andrzej-bobola.webp')" />
 
-    {{--<meta property="og:image:width"        content="" />
-    {{--<meta property="og:image:height"        content="" />
-    --}}
     <meta property="og:locale" content="pl_PL" />
     <meta name="twitter:card" content="summary_large_image" />
-    {{--Koniec Open Graph --}}
-
-    {{--<link rel="stylesheet" href="{{ URL::asset('/css/bootstrap-css/bootstrap-reboot.min.css')}}">--}}
 
     <link rel="stylesheet" href="{{ URL::asset('/css/fonty.css')}}">
     <link rel="stylesheet" href="{{ URL::asset('/css/mdb/mdb.min.css')}}">
@@ -54,7 +38,7 @@
      duchy złe, które na zgubę dusz ludzkich po tym
       świecie krążą, mocą Bożą strąć do piekła. Amen.
 --}}
-{{--@include('cookie-consent::index')--}}
+
 <!-- Navbar -->
 
 <nav class="navbar navbar-expand-lg tlo-glowne text-white shadow-0 ">
