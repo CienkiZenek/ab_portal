@@ -3,31 +3,23 @@
 @section('description', 'Portal poświęcony św. Andrzejowi Boboli')
 @section('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych')
 @section('tresc')
-
+    aaaaaaa
+{{--
 
 
     <div class="row text-center  mt-2 mb-3   ">
         <div class="col-12">
 
-
-
-          {{--  <span class="text-wrap shadow-5 p-1 rounded-4 bg-light"><a href="" class="color-glowny text-decoration-none fs-5  ">Dlaczego Andrzej Bobola?</a></span>--}}
-
-
         </div>
     </div>
     @include('dodatki.dlaczegoAB')
 
-
     <div class="row  mb-2 ">
-
         <div class="col-lg-6 col-md-12 col-sm-12 mb-3 ">
-
             @if(isset($karuzelaZbior) && $karuzelaZbior->count()>1)
                 @include('dodatki.karuzela', ['karuzelaZbior'=>$karuzelaZbior])
 
             @endif
-          {{--  @include('dodatki.karuzelaKod')--}}
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 border border-1 rounded-1 ps-0 pe-0 shadow-5">
 <div class="tlo-glowne0 border border-1  rounded-1">
@@ -35,11 +27,11 @@
                >Aktualności</a>
         </div>
             @if($wiadomosciPrzyklejone->count()>0)
-        <ul {{--style="font-size: x-small"--}} class="list-unstyled mb-0  ms-2">
+        <ul  class="list-unstyled mb-0  ms-2">
                 @foreach($wiadomosciPrzyklejone as $wiadomosc)
 
                 <li  class="hover-shadow rounded-1"><i class="fa-solid fa-thumbtack me-1 text-warning fa-rotate-by ms-1" style="--fa-rotate-angle: 45deg;" ></i>
-                    <a href="{{route('wiadomosc',$wiadomosc->slug)}}" {{--style="font-size: x-small"--}}
+                    <a href="{{route('wiadomosc',$wiadomosc->slug)}}"
                         class="text-decoration-none color-przyklejone text-warning ">
                         {{App\Services\GlownaServices::limitSpacja($wiadomosc->tytul,40)}}</a>
                 </li>
@@ -47,20 +39,15 @@
         </ul>
             @endif
 
-
-
-<ul {{--style="font-size: x-small"--}} class="list-unstyled mb-1  ms-2">
+<ul class="list-unstyled mb-1  ms-2">
            @foreach($wiadomosciStart as $wiadomosc)
         <li class="hover-shadow rounded-1"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
                         class="text-decoration-none color-glowny ms-1">{{App\Services\GlownaServices::limitSpacja($wiadomosc->tytul,40)}}</a>
         </li>
             @endforeach
 </ul>
-
         </div>
-
     </div>
-
 
         <div class="row mb-3 gap-lg-4">
 
@@ -76,7 +63,6 @@
                     @endif
                 </div>
    @endif
-
                 <div class="col-lg-5 col-md-12 col-sm-12  border border-1 rounded-1 ps-0 pe-0 shadow-5">
                     @if($czywiesz)
                     @include('dodatki.czyWieszZe')
@@ -105,8 +91,6 @@
 
                 </div>
             </div>
-           {{-- <a href="{{route('relikwie')}}" class="btn btn-primary  w-100 shadow-5" data-mdb-ripple-init><i class='fas fa-church'></i> Relikwie dla Twojego kościoła</a>
---}}
         </div>
 
         <div class="col-lg-6 col-md-12 col-sm-12">
@@ -126,14 +110,12 @@
 
                 </div>
             </div>
-           {{-- <a href="{{route('intencje')}}" class="btn btn-primary w-100 shadow-5" data-mdb-ripple-init><i class="fas fa-feather"></i> Prześlij intencję</a>
-           --}}
+
         </div>
 
     </div>
 
 <div class="row mb-3 gap-lg-4">
-
 
         <div class="col-lg-5 col-md-12 col-sm-12 border border-1 rounded-1 ps-0 pe-0 mb-2 mb-lg-0 ms-lg-5 shadow-5">
 
@@ -144,10 +126,7 @@
             <div class="ms-2"><a href="/modlitwa/nowenna-do-sw-andrzeja-boboli" class="color-glowny">Nowenna do św. Andrzeja Boboli</a></div>
             <div class="ms-2"><a href="/modlitwa/litania-do-sw-andrzeja-boboli" class="color-glowny">Litania do św. Andrzeja Boboli</a></div>
 
-            {{--<div class="ms-2"><a href="{{route('nawrocenieNarodu')}}" class="color-glowny">Modlitwa o nawrócenie narodu polskiego</a></div>--}}
-
         </div>
-
 
     <div class="col-lg-5 col-md-12 col-sm-12  border border-1 rounded-1 ps-0 pe-0 shadow-5">
 
@@ -167,7 +146,7 @@
             <a href="{{route('artykuly')}}" class="text-decoration-none color-glowny ms-2"
             ><i class="fas fa-book-open-reader color-glowny"></i> Artykuły</a>
         </div>
-        <ul {{--style="font-size: x-small"--}} class="list-unstyled mb-0  ms-2">
+        <ul  class="list-unstyled mb-0  ms-2">
             @foreach($artykulyStart as $artykul)
                 <li><a href="{{route('artykul',$artykul->slug)}}"
                        class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($artykul->tytul,40)}}</a>
@@ -188,11 +167,8 @@
 </div>
 
 
-
-
-
-
 @include('dodatki.ksiazkaGlowna')
 
+--}}
 
 @endsection
