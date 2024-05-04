@@ -35,7 +35,7 @@ class GlownyController extends Controller
         // wybieranie losowego "Czy wiesz że...":
 
         $czywiesz=GlownaServices::czyWieszLosowo();
-
+        $cytatDnia=GlownaServices::cytatDniaLosowo();
         //dd($strona_glowna);
         /*$data = Carbon::now();*/
         //dd($dt->month);
@@ -45,7 +45,7 @@ $kalendariumDzis=GlownaServices::kalendariumNaDzis();
 $kalendariumJutro=GlownaServices::kalendariumNaJutro();
 $kalendariumPojutrze=GlownaServices::kalendariumNaPoJutrze();
 
-$cytatDnia='';
+
         //dd($karuzelaZbior);
         return view('tresc.stronaGlowna', ['strona_glowna'=>$strona_glowna,
 'karuzelaZbior'=>$karuzelaZbior,

@@ -47,18 +47,25 @@ class GlownaServices
 // wybieranie losowego "Czy wiesz że...":
 
         //dd(Czywiesz::all()->random());
-
-        return Czywiesz::all()->random();
-
+        $czywiesz=false;
+        if(Czywiesz::all()->count()>0){
+            $czywiesz=Czywiesz::all()->random();
+        }
+        return $czywiesz;
     }
 
     public static function cytatDniaLosowo()
     {
         // wybieranie losowego Cytatu dnia:
 
-        //dd(Cytat::all());
+        $cytat=false;
+        if(Cytat::all()->count()>0){
+            $cytat=Cytat::all()->random();
+        }
 
-        return Cytat::all()->random();
+
+        return $cytat;
+
 
 
     }

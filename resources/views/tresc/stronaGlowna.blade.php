@@ -71,13 +71,16 @@
                 </div>
             @else
                 <div class="col-lg-5 col-md-12 col-sm-12 border border-1 rounded-1 ps-0 pe-0 mb-2 mb-lg-0 ms-lg-5 shadow-5">
-        @include('dodatki.cytatDnia')
+        @if($cytatDnia)
+                    @include('dodatki.cytatDnia')
+                    @endif
                 </div>
    @endif
 
                 <div class="col-lg-5 col-md-12 col-sm-12  border border-1 rounded-1 ps-0 pe-0 shadow-5">
-    @include('dodatki.czyWieszZe')
-
+                    @if($czywiesz)
+                    @include('dodatki.czyWieszZe')
+                    @endif
 
 </div>
 

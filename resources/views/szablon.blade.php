@@ -133,7 +133,7 @@
                         role="button"
                         aria-expanded="false"
                     >
-                     Zasoby</a>
+                     Zawartość</a>
 
                     <ul class="dropdown-menu" aria-labelledby="tresc">
 

@@ -9,7 +9,7 @@ use App\Models\Modlitwy;
 class ModlitwyController extends Controller
 {
     public function modlitwy(){
-$modlitwy=Modlitwy::orderBy('created_at', 'desc')->paginate(20);
+$modlitwy=Modlitwy::orderBy('created_at', 'asc')->paginate(40);
         return view('tresc.podstrony.modlitwy', ['Wyniki'=>$modlitwy] );
 
     }
