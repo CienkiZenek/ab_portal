@@ -27,7 +27,7 @@
 
         </div>
     </div>
-    <hr class="hr" />
+
     {{--Koniec h1 na podstonie--}}
 
 
@@ -37,10 +37,11 @@
         <div class="row mb-3"><div class="vr"></div>
             <div class="col-lg-8 col-md-7 col-sm-6">
 
-                <div class="color-glowny fw-bold"><a href="{{route('artykul',$artykul->slug)}}" style="font-size: small"
+                <div class="color-glowny mb-2"><a href="{{route('artykul',$artykul->slug)}}"
                                                      class="text-decoration-none">{{$artykul->tytul}}</a></div>
 
-                <div class="text-muted" style="font-size: x-small">{!!$artykul->naglowek!!}</div>
+                <div class="text-muted color-czarny" style="font-size: small"><a href="{{route('artykul',$artykul->slug)}}"
+                                                                     class="text-decoration-none color-czarny">{!!$artykul->naglowek!!}</a></div>
             </div>
             <div class="col-lg-2 col-md-5 col-sm-6 ">
 
@@ -51,21 +52,15 @@
                         alt="{{$artykul->zdjecie1_podpis}}"
                     />
                 </figure>
-                {{--<img src="{{URL::asset('zdjecia/'.$wiadomosc->zdjecie1)}}" class="img-fluid" alt="">--}}
+
             </div>
         </div>
-        {{--<div class="row">
-            <div class="col-8">
-                <div><a href="{{route('artykul',$artykul->slug)}}" style="font-size: xx-small"
-                        class="text-decoration-none">{{$artykul->tytul}}</a></div>
-                <div >{!!$artykul->naglowek!!}</div>
-            </div>
-            <div class="col-2">--}}{{--{{$artykul->zdjecie1}}--}}{{--
-                <img src="{{URL::asset('zdjecia/'.$artykul->zdjecie1)}}" class="img-fluid" alt="">
-            </div>
-        </div>--}}
 
 
+        {{--<hr class="hr" />--}}
     @endforeach
     @include('dodatki.paginacja')
+
+    <div class="mb-14"></div>
+    <div class="mb-14"></div>
 @endsection

@@ -35,7 +35,7 @@
                 <li class=""><i class="fas fa-house me-2 text-info"></i><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('wiadomosci')}}" class="color-glowny">Aktualności</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('artykuly')}}" class="color-glowny">Artykuły</a></li>
-                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/dlaczego-andrzej-bobola" class="color-glowny">Dlaczego Andrzej Bobola?</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/dlaczego-wlasnie-andrzej-bobola" class="color-glowny">Dlaczego Andrzej Bobola?</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('biografia')}}" class="color-glowny">Życi i kult</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('biogram')}}" class="color-glowny">Biogram</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('IntencjeSwiadectwa')}}" class="color-glowny">Intencje i świadectwa</a></li>
@@ -50,8 +50,9 @@
 
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('filmy')}}" class="color-glowny">Filmy</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('zasoby')}}" class="color-glowny">Zdjęcia, dokumenty, książki</a></li>
-                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="zasob/obrazy-sw-andrzeja-boboli" class="color-glowny">Obrazy św. Andrzeja Boboli</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/zasob/portrety-sw-andrzeja-boboli" class="color-glowny">Portrety św. Andrzeja Boboli</a></li>
                 <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/zasob/powrot-relikwii-do-kraju-album-1938" class="color-glowny">Powrót relikwii do kraju (Album 1938)</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/zasob/encyklika-papieza-piusa-xii-invicti-athletae-christi" class="color-glowny">Encyklika "Invicti Athletae Christi"</a></li>
 
                 {{--<li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('kalendarium')}}" class="color-glowny">Kalendarium</a></li>--}}
 

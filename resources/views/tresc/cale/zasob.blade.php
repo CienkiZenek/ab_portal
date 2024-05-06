@@ -22,26 +22,37 @@
     {{-- h1 na podstonie--}}
 
     <div class="row mt-5 mb-5">
-        <div class="col-12 text-center">
+
+        <div class="col-lg-1 "></div>
+        <div class="col-lg-10 col-sm-12 col-xs-12 text-center">
+
             <h1 class="h1_podstrony fs-5 color-glowny">{{$zasob->nazwa}}</h1>
 
         </div>
+        <div class="col-lg-1 "></div>
     </div>
     {{--Koniec h1 na podstonie--}}
 
 
 <div class="row justify-content-center">
 
-
-    <p style="text-align: justify; text-indent: 1em" class="mb-3">{{$zasob->opis}}</p>
-
-
     @if(Str::length($zasob->zdjecie1)>4)
         <div class="row d-flex justify-content-center">
             <div class="col-6 ">
-        @include('dodatki.zdjecie1', ['zdjecie1'=>$zasob->zdjecie1, 'zdjecie1_podpis'=>$zasob->zdjecie1_podpis,'zdjecie1_id'=>$zasob->zdjecie1_id])
-        </div></div>
+                @include('dodatki.zdjecie1', ['zdjecie1'=>$zasob->zdjecie1, 'zdjecie1_podpis'=>$zasob->zdjecie1_podpis,'zdjecie1_id'=>$zasob->zdjecie1_id])
+            </div></div>
     @endif
+
+
+
+
+        <div class="col-lg-1"></div>
+        <div class="col-lg-9 col-sm-12 col-xs-12">
+            <p style="text-align: justify; text-indent: 1em" class="mb-3">{{$zasob->opis}}</p>
+            <p class="akapit">
+                {!!  App\Services\GlownaServices::formatowanie($zasob->tresc)!!}</p>
+        </div>
+            <div class="col-lg-2 "></div>
 
 
     @if(Str::length($zasob->zdjecie2)>4)

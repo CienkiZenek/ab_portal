@@ -32,9 +32,9 @@
 
 
 @foreach($Wyniki as $modlitwa)
-    <div class="row mb-3">
+    <div class="row mb-4">
         <div class="col-1"></div>
-    <div class="col-8"><a href="{{route('modlitwa',$modlitwa->slug)}}" style="font-size: small"
+    <div class="col-11"><a href="{{route('modlitwa',$modlitwa->slug)}}" style="font-size:"
             class="text-decoration-none color-glowny8">{{$modlitwa->nazwa}}</a></div>
     </div>
 

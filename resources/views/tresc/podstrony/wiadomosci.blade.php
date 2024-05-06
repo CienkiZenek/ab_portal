@@ -36,10 +36,13 @@
     <div class="row mb-3 ">
         <div class="col-lg-8 col-md-7 col-sm-6 shadow-5 rounded-5">
 
-    <div class="color-glowny fw-bold"><a href="{{route('wiadomosc',$wiadomosc->slug)}}" style="font-size: small"
+    <div class="color-glowny mb-2"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
             class="text-decoration-none">{{$wiadomosc->tytul}}</a></div>
 
-    <div class="text-muted" style="font-size: x-small">{!!$wiadomosc->naglowek!!}</div>
+    <div class="text-muted" style="font-size: small">
+        <a href="{{route('wiadomosc',$wiadomosc->slug)}}"
+        class="text-decoration-none  color-czarny">
+        {!!$wiadomosc->naglowek!!}</a></div>
 
     </div>
         <div class="col-lg-2 col-md-5 col-sm-6 ">
@@ -57,4 +60,6 @@
     <hr class="hr hr-blurry" />
 @endforeach
 @include('dodatki.paginacja')
+    <div class="mb-14"></div>
+    <div class="mb-14"></div>
 @endsection

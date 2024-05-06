@@ -8,7 +8,7 @@
     <meta name="description" content="@yield('description', 'Portal poświęcony św. Andrzejowi Boboli')">
     <meta name="keywords" content="@yield('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych, relikwie')">
     <title>@yield('title', 'AndrzejBobola.info')</title>
-    <link rel="icon" type="image/png" sizes="48x48"   href="{{ URL::asset('/stat/favicon2.webp')}}">
+    <link rel="icon" type="image/png" sizes="48x48"   href="{{ URL::asset('/stat/favicon.webp')}}">
 
 
     <meta property="og:url"           content="@yield('og_url', 'https://AndrzejBobola.info')" />
@@ -53,7 +53,7 @@
            data-mdb-ripple-centered="true"
            data-mdb-ripple-radius="80"
         >
-            <img src="{{ URL::asset('/stat/logoAndrzejBobolaInfo.png')}}"
+            <img src="{{ URL::asset('/stat/logoAndrzejBobolaInfo.webp')}}"
                  width="95" height="100"
                  title="logoAndrzejBobolaInfo"
                  alt="sw-Andrzej-Bobola-logo-portalu-AndrzejBobola.info"

@@ -14,7 +14,7 @@
                 <p class="card-text ">
                     Kult św. Andrzeja Boboli, jezuickiego męczennik z XVII w., zatacza coraz szersze kręgi!
                 </p>
-                <a href="/artykul/dlaczego-andrzej-bobola" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="far fa-circle-question"></i> Dlaczego właśnie Andrzej Bobola?</a>
+                <a href="/artykul/dlaczego-wlasnie-andrzej-bobola" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="far fa-circle-question"></i> Dlaczego właśnie Andrzej Bobola?</a>
 
                 {{--<p class="card-text">
                     <small class="text-muted">Last updated 3 mins ago</small>

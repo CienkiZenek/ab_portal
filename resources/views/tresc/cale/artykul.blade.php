@@ -23,13 +23,19 @@
     {{-- h1 na podstonie--}}
 
     @if(Str::length($artykul->motto)>5)
-    <div class="row">
+    <div class="row ">
+        <div class="col-lg-2 col-md-0"></div>
+        <div class="col-9 text-muted shadow-3 bg-light" style="text-align: justify;">{!!$artykul->motto!!}
+            <div class="row">
+                <div class="col-12 text-muted d-flex justify-content-end">{!!$artykul->motto_podpis!!}</div>
+            </div>
 
-        <div class="col-12 text-muted">{!!$artykul->motto!!}</div>
+        </div>
+        <div class="col-lg-2 "></div>
     </div>
-    <div class="row">
-        <div class="col-12 text-muted d-flex justify-content-end">{!!$artykul->motto_podpis!!}</div>
-    </div>
+
+
+
     @endif
 
 
@@ -40,44 +46,47 @@
         </div>
     </div>
     {{--Koniec h1 na podstonie--}}
+    @if(Str::length($artykul->zdjecie1)>1)
+        @include('dodatki.zdjecie1', ['zdjecie1'=>$artykul->zdjecie1, 'zdjecie1_podpis'=>$artykul->zdjecie1_podpis,'zdjecie1_id'=>$artykul->zdjecie1_id])
+    @endif
 
 
 <div class="row justify-content-center">
-
-
-<div class="mb-3">Opublikowano: {{Carbon\Carbon::parse($artykul->data)->format('d-m-Y')}}</div>
-
-{{--<div class="mb-3">{!!$artykul->naglowek!!}</div>--}}
-    <div class="row mb-3">
-
-        <div class=" col-12 ">{!!$artykul->naglowek!!}</div>
-
-    </div>
     @if(Str::length($artykul->spis_tresci)>5)
         <div class="row">
             <div class="col-lg-2 col-md-0"></div>
             <div class="col-lg-8 col-md-12 mb-3">{!!$artykul->spis_tresci!!}</div>
-            <div class="col-lg-2 col-md-0"></div>
+            <div class="col-lg-2 "></div>
         </div>
     @endif
 
 
-<div class="mb-3"><p class="akapit">{!!  App\Services\GlownaServices::formatowanie($artykul->tresc)!!}</p></div>
-    @if(Str::length($artykul->ramka1)>3)
-    <div class="row">
-        <div class=" col-12 mb-3 note note-warning">{!!$artykul->ramka1!!}</div>
 
+
+
+    <div class="col-lg-1"></div>
+    <div class="col-lg-9 col-sm-12 col-xs-12">
+        {{-- początek treści artykulu--}}
+        <div class="mb-3">Opublikowano: {{Carbon\Carbon::parse($artykul->data)->format('d-m-Y')}}</div>
+        <div class="mb-2" style="text-align: justify;">{!!$artykul->naglowek!!}</div>
+
+        @if(Str::length($artykul->ramka2)>3)
+
+                <div class=" mb-3 note note-warning" style="text-align: justify;">{!!$artykul->ramka2!!}</div>
+
+
+        @endif
+        <p class="akapit">{!!  App\Services\GlownaServices::formatowanie($artykul->tresc)!!}</p>
+
+        @if(Str::length($artykul->ramka1)>3)
+                <div class=" mb-3 note note-info" style="text-align: justify;">{!!$artykul->ramka1!!}</div>
+        @endif
+
+        <div class=" mb-3">{{$artykul->autor}}</div>
+
+        {{-- koniec treści artykulu--}}
     </div>
-    @endif
-
-    {{--@if(Str::length($wiadomosc->ramka1)>5)
-    <div class="mb-3 note note-warning">{!!$wiadomosc->ramka1!!}</div>
-    @endif--}}
-
-    <div class="row">
-        <div class=" col-12 mb-3">{{$artykul->autor}}</div>
-
-    </div>
+    <div class="col-lg-2 "></div>
 
 
     <div class="row"></div>
@@ -85,9 +94,7 @@
 
 
 
-    @if(Str::length($artykul->zdjecie1)>1)
-    @include('dodatki.zdjecie1', ['zdjecie1'=>$artykul->zdjecie1, 'zdjecie1_podpis'=>$artykul->zdjecie1_podpis,'zdjecie1_id'=>$artykul->zdjecie1_id])
-    @endif
+
     @if(Str::length($artykul->zdjecie2)>1)
         @include('dodatki.zdjecie2', ['zdjecie2'=>$artykul->zdjecie2, 'zdjecie2_podpis'=>$artykul->zdjecie2_podpis,'zdjecie2_id'=>$artykul->zdjecie2_id])
     @endif

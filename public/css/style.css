@@ -1,8 +1,12 @@
 body
 {
+
     font-family: 'LatoRegular', sans-serif;
     /*font-family: 'CormorantRegular', serif;*/
     font-optical-sizing: auto;
+
+}
+#zawartoscGlowna{
 
 }
 /* glówne*/
@@ -13,6 +17,9 @@ body
     color: #283593;
 }
 
+.color-czarny{
+    color:#000000;
+}
 .color-przyklejone{
     color: #3F51B5;
 }

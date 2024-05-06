@@ -39,27 +39,27 @@
         <div class="col-1">
             @switch($zasob->rodzaj)
                 @case('ksiazka')
-                    <i class="fas fa-book fa-lg color-glowny" title="Książka"></i>
+                    <i class="fas fa-book fa-lg color-glowny fa-2x" title="Książka"></i>
                     @break
 
                 @case('galeria')
-                    <i class="fas fa-images fa-lg color-glowny" title="Zdjęcia"></i>
+                    <i class="fas fa-images fa-lg color-glowny fa-2x" title="Zdjęcia"></i>
                     @break
                 @case('modlitwa')
-                    <i class="fas fa-hands-praying fa-lg color-glowny" title="Modlitwa"></i>
+                    <i class="fas fa-hands-praying fa-lg color-glowny fa-2x" title="Modlitwa"></i>
                     @break
                 @case('dokument')
-                    <i class="fas fa-file-lines fa-lg color-glowny" title="Dokument"></i>
+                    <i class="fas fa-file-lines fa-lg color-glowny fa-2x" title="Dokument"></i>
                     @break
 
                 @case('wydarzenie')
-                    <i class="fas fa-users fa-lg color-glowny" title="Wydarzenie"></i>
+                    <i class="fas fa-users fa-lg color-glowny fa-2x" title="Wydarzenie"></i>
                     @break
                 @case('inne')
-                    <i class="fas fa-circle-dot fa-lg color-glowny" title="Inne"></i>
+                    <i class="fas fa-circle-dot fa-lg color-glowny fa-2x" title="Inne"></i>
                     @break
                 @default
-                    <i class="fas fa-circle-dot fa-lg color-glowny"  title="Inne"></i>
+                    <i class="fas fa-circle-dot fa-lg color-glowny fa-2x"  title="Inne"></i>
                     @break
 
 
@@ -70,7 +70,7 @@
         <div class="col-10">
 
 
-                <a href="{{route('zasob',$zasob->slug)}}" style="font-size: small"
+                <a href="{{route('zasob',$zasob->slug)}}" "
                               class="text-decoration-none color-glowny8">{{$zasob->nazwa}}</a></div>
     </div>
 

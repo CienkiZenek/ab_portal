@@ -14,12 +14,8 @@ class PomocniczyController extends Controller
     {
         return response()->json(['captcha' => captcha_img()]);
     }
-// formularz intencji
-    public function filmy(){
-        $filmy=Filmy::orderBy('created_at', 'desc')->paginate(10);
-        return view('tresc.podstrony.filmy', ['Wyniki'=>$filmy]);
 
-    }
+
     public function strony(){
 
         return view('tresc.podstrony.strony', );
