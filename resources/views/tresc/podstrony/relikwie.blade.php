@@ -27,7 +27,7 @@
     {{--Koniec h1 na podstonie--}}
 
     <div class="row">
-        <div class="col-lg-1 col-md-0"></div>
+        <div class="col-lg-1"></div>
         <div class="col-lg-9 col-md-12">
     <p class="akapit">Jeśli w Twoim kościele istnieje kult św. Andrzeja Boboli, lub istnieje pragnienie zapoczątkować
         go, to jest możliwość zdobycia relikwi cząstkowych tego świętego męczennika! </p>
@@ -41,6 +41,33 @@
 
     </div>
     </div>
-    <div class="col-lg-2 col-md-0"></div>
+    <div class="col-lg-2"></div>
 
+    <div class="row mt-4">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10 col-md-12 lightbox" data-mdb-lightbox-init data-mdb-zoom-level="0.25">
+
+            <figure class="figure">
+                <img
+                    src="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2.webp')}}"
+                    alt="Sanktuarium św. Andrzeja Boboli w Warszawie - trumna z ciałem męczennika."
+                    class="img-fluid rounded w-100 shadow-1-strong rounded"
+                    data-mdb-img="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2_duze.webp')}}"
+
+                />
+                <figcaption class="figure-caption text-end">Sanktuarium św. Andrzeja Boboli w Warszawie - trumna z ciałem męczennika.</figcaption>
+            </figure>
+  {{--  <div class=" mt-5 lightbox" data-mdb-lightbox-init data-mdb-zoom-level="0.25">
+        <img
+            src="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2.webp')}}"
+            alt="Relikwie św. Andrzeja Boboli - sanktuarium w Warszawie"
+            class="img-fluid rounded w-100 shadow-1-strong rounded"
+            data-mdb-img="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2_duze.webp')}}"
+
+        />
+
+    </div>--}}
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
 @endsection

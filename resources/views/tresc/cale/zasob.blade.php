@@ -36,19 +36,33 @@
 
 <div class="row justify-content-center">
 
-    @if(Str::length($zasob->zdjecie1)>4)
-        <div class="row d-flex justify-content-center">
-            <div class="col-6 ">
-                @include('dodatki.zdjecie1', ['zdjecie1'=>$zasob->zdjecie1, 'zdjecie1_podpis'=>$zasob->zdjecie1_podpis,'zdjecie1_id'=>$zasob->zdjecie1_id])
-            </div></div>
-    @endif
 
 
 
 
-        <div class="col-lg-1"></div>
+
+        <div class="col-lg-1">
+
+        </div>
         <div class="col-lg-9 col-sm-12 col-xs-12">
-            <p style="text-align: justify; text-indent: 1em" class="mb-3">{{$zasob->opis}}</p>
+           <div class="row mb-4"><div class="col-1">
+                   <div class="vr" style="width: 5px; background-color: #3F51B5; height: 100%"></div>
+               </div>
+            {{-- <div class="vr" style="width: 5px; background-color: #d63384; height: 100%"></div>--}}
+               <div class="col-11">
+            <p style="text-align: justify; text-indent: 1em" class="p-2 bg-light rounded ">
+                {!!  App\Services\GlownaServices::formatowanie($zasob->opis)!!}
+                {{--{{$zasob->opis}}--}}</p>
+           </div>
+
+        </div>
+            @if(Str::length($zasob->zdjecie1)>4)
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 ">
+                        @include('dodatki.zdjecie1', ['zdjecie1'=>$zasob->zdjecie1, 'zdjecie1_podpis'=>$zasob->zdjecie1_podpis,'zdjecie1_id'=>$zasob->zdjecie1_id])
+                    </div></div>
+            @endif
+
             <p class="akapit">
                 {!!  App\Services\GlownaServices::formatowanie($zasob->tresc)!!}</p>
         </div>

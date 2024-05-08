@@ -1,4 +1,4 @@
-<div class="fs-6 mb-2 mt-3">Galeria:</div>
+<div class="fs-6 mb-3 mt-4">{{--Galeria:--}}</div>
 
 <div class="lightbox" data-mdb-lightbox-init>
     <div class="row">

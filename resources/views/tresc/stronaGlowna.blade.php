@@ -132,7 +132,7 @@
             <span class="text-decoration-none color-glowny ms-2"><a href="{{route('zasoby')}} " class="color-glowny"><i class="fas fa-swatchbook"></i> Zdjęcia, dokumenty, książki</a></span>
         </div>
         <div class="ms-2"><a href="/zasob/portrety-sw-andrzeja-boboli" class="color-glowny">Portrety św. Andrzeja Boboli</a></div>
-        <div class="ms-2"><a href="/zasob/powrot-relikwii-do-kraju-album-1938" class="color-glowny">Powrót relikwii do kraju (Album 1938)</a></div>
+        <div class="ms-2"><a href="/zasob/powrot-relikwii-sw-andrzeja-boboli-do-kraju-po-kanonizacji-album-z-1938-r" class="color-glowny">Powrót relikwii do kraju (Album 1938)</a></div>
         <div class="ms-2"><a href="/zasob/encyklika-papieza-piusa-xii-invicti-athletae-christi" class="color-glowny">Encyklika o św. Andrzeju Boboli</a></div>
     </div>
 

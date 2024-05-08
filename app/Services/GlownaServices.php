@@ -156,10 +156,11 @@ class GlownaServices
     {
         if (Str::length($string) > $limit) {
             $stringZLewej = Str::take($string, $limit);
-            $pozycjaOstaSpacji = strrpos($stringZLewej, ' ');
-            $stringDoOstatniejSpacji = Str::take($string, $pozycjaOstaSpacji + 1);
 
-            return Str::replaceLast(' ', '...', $stringDoOstatniejSpacji);
+            $pozycjaOstaSpacji = strrpos($stringZLewej, ' ');
+            $stringDoOstatniejSpacji = Str::take($string, $pozycjaOstaSpacji);
+           // return Str::replaceLast(' ', '...', $stringDoOstatniejSpacji);
+        return $stringDoOstatniejSpacji.'...';
         }
         return $string;
     }
