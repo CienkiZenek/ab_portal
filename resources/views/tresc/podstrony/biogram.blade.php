@@ -32,8 +32,8 @@
 
 
     @foreach($Biogram as $biogram)
-        <div class="row mb-3">
-            <div class="col-lg-2 col-md-3 col-sm-6  fs-6 fw-bold">{{$biogram->rok}}</div>
+        <div class="row mb-3 shadow-3 rounded-2">
+            <div class="col-lg-2 col-md-3 col-sm-6  fs-5 fw-bold">{{$biogram->rok}}</div>
             <div class="col-lg-2 col-md-3 col-sm-6  fw-bolder">{{$biogram->dzien_mies}}</div>
         <div class=" col-lg-8 col-md-6 col-sm-12  fs-6" style="text-align: justify">
             {{$biogram->tresc}}
