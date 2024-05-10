@@ -94,10 +94,10 @@ $kalendariumPojutrze=GlownaServices::kalendariumNaPoJutrze();
         return view('tresc.podstrony.naszaKsiazka', );
     }
 
-    public function gdzieKupic(){
+    /*public function gdzieKupic(){
         $ksiegarnie=Ksiegarnie::orderBy('created_at', 'desc')->where('dostepna', 'tak')->get();
         return view('tresc.podstrony.gdzieKupic', ['Wyniki'=>$ksiegarnie]);
-    }
+    }*/
 
     public function publikacjeKsiazka(){
 

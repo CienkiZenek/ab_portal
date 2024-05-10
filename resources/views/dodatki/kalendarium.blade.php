@@ -12,7 +12,7 @@
     @foreach($kalendariumDzis as $kalendarium)
         <div class="color-glowny mt-2 ms-2 me-2 lh-sm " style="text-indent:0em;  text-align: justify;">
            {{-- {{\Carbon\Carbon::createFromFormat('Y-m-d', $kalendarium->data)->format('Y')}} - {{$kalendarium->tytul}}--}}
-            <strong>{{\Str::take($kalendarium->data,4)}}</strong> - {{$kalendarium->tytul}}
+            <strong>{{\Str::take($kalendarium->data,4)}}</strong> - {!!$kalendarium->tytul!!}
         </div>
     @endforeach
     @endif

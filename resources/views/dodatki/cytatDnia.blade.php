@@ -4,13 +4,16 @@
     </div>
 
 
-    @if(session('cytatPodpis')=='')
+    @if(session('cytatTresc')=='' || session('cytatPodpis')=='')
+
         {{--<p>Czy wiesz, że: {{App\Services\GlownaServices::czyWieszLosowo()->tytul}}</p>--}}
 
         @php
 
-            session()->put('cytatPodpis',App\Services\GlownaServices::cytatDniaLosowo()->podpis);
-            session()->put('cytatTresc',App\Services\GlownaServices::cytatDniaLosowo()->tresc);
+          $cytat = App\Services\GlownaServices::cytatDniaLosowo();
+          //dd($cytat);
+                        session()->put('cytatPodpis',$cytat->podpis);
+                        session()->put('cytatTresc',$cytat->tresc);
 
         @endphp
         <div class="color-glowny mt-2 ms-2 me-2 lh-sm " style="text-indent:1em;  text-align: justify;">{{session()->get('cytatTresc')}}</div>

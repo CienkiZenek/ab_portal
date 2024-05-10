@@ -16,8 +16,8 @@
             <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
             <li class="breadcrumb-item"><a href="{{route('zasoby')}}" class="color-glowny">Zasoby</a></li>
             <li class="breadcrumb-item active" aria-current="page">
-                {{--{{$zasob->nazwa,40}}--}}
-                {{App\Services\GlownaServices::limitSpacja($zasob->nazwa,40)}}</li>
+                {{$zasob->nazwa}}
+                {{--{{App\Services\GlownaServices::limitSpacja($zasob->nazwa,40)}}--}}</li>
         </ol>
     </nav>
     {{-- Koniec breadcrumb--}}
@@ -51,8 +51,8 @@
                    <div class="vr" style="width: 5px; background-color: #3F51B5; height: 100%"></div>
                </div>
             {{-- <div class="vr" style="width: 5px; background-color: #d63384; height: 100%"></div>--}}
-               <div class="col-11">
-            <p style="text-align: justify; text-indent: 1em" class="p-2 bg-light rounded ">
+               <div class="col-11 p-2 bg-light rounded">
+            <p style="text-align: justify; text-indent: 1em">
                 {!!  App\Services\GlownaServices::formatowanie($zasob->opis)!!}
                 {{--{{$zasob->opis}}--}}</p>
            </div>
@@ -92,7 +92,7 @@
                {{$plik->opis}}
 
             </div>
-            <div class="col-2">
+            <div class="col-2 text-warning">
 
                 <a href="{{ URL::asset('pliki/'.$plik->plik)}}" target="_blank" class="color-glowny">Pobierz plik
 

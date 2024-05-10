@@ -63,7 +63,6 @@ class GlownaServices
             $cytat=Cytat::all()->random();
         }
 
-
         return $cytat;
 
 

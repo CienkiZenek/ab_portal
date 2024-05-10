@@ -80,9 +80,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link text-white " href="{{route('biografia')}}"
-                       data-mdb-ripple-init
 
-                       data-mdb-ripple-color="white"
                     >Życie&nbsp;i&nbsp;kult</a>
                 </li>
             </ul>

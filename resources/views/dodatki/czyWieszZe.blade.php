@@ -8,9 +8,9 @@
 
         session()->put('czywieszTresc',App\Services\GlownaServices::czyWieszLosowo()->tresc);
     @endphp
-    <div class="color-glowny mt-2 ms-2 me-2 lh-sm " style="text-indent:1em;  text-align: justify;">{{session()->get('czywieszTresc')}}</div>
+    <div class="color-glowny mt-2 ms-2 me-2 lh-sm " style="text-indent:1em;  text-align: justify;">{!! session()->get('czywieszTresc')!!}</div>
 @else
-    <div class="color-glowny mt-2 ms-2 me-2 lh-sm " style="text-indent:1em;  text-align: justify;">{{session()->get('czywieszTresc')}}</div>
+    <div class="color-glowny mt-2 ms-2 me-2 lh-sm " style="text-indent:1em;  text-align: justify;">{!!  session()->get('czywieszTresc')!!}</div>
 
 
 @endif

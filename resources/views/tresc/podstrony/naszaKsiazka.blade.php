@@ -77,9 +77,9 @@
                             <a href="{{route('publikacjeKsiazka')}}" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="far fa-keyboard"></i> Publikacje o książce</a>
                         </p>
 
-                        <p class="text-center mt-4">
+                        {{--<p class="text-center mt-4">
                         <a href="{{route('gdzieKupic')}}" class="btn btn-primary" data-mdb-ripple-init><i class="fas fa-cart-arrow-down"></i> Księgarnie internetowe gdzie można kupić książkę</a>
-                        </p>
+                        </p>--}}
                     </div>
                 </div>
             </div>

@@ -57,7 +57,7 @@
                 {{--<li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('kalendarium')}}" class="color-glowny">Kalendarium</a></li>--}}
 
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('naszaKsiazka')}}" class="color-glowny">Książka "Boży wojownik"</a></li>
-                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('gdzieKupic')}}" class="color-glowny">Gdzie kupić książkę?</a></li>
+                {{--<li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('gdzieKupic')}}" class="color-glowny">Gdzie kupić książkę?</a></li>--}}
                 <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('publikacjeKsiazka')}}" class="color-glowny">Publikacje o książce</a></li>
                 <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('fragmentKsiazki')}}" class="color-glowny">Fragment książki</a></li>
 

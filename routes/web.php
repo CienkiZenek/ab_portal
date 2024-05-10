@@ -37,7 +37,7 @@ Route::get('/mapaStrony', [GlownyController::class, 'mapaStrony'])->name('mapaSt
 //
 Route::get('/ksiazka-bozy-wojownik', [GlownyController::class, 'naszaKsiazka'])->name('naszaKsiazka');
 Route::get('/bozy-wojownik-fragment-ksiazki', [GlownyController::class, 'fragmentKsiazki'])->name('fragmentKsiazki');
-Route::get('/gdzie-kupic-ksiazke-bozy-wojownik', [GlownyController::class, 'gdzieKupic'])->name('gdzieKupic');
+/*Route::get('/gdzie-kupic-ksiazke-bozy-wojownik', [GlownyController::class, 'gdzieKupic'])->name('gdzieKupic');*/
 Route::get('/publikacjeKsiazka', [GlownyController::class, 'publikacjeKsiazka'])->name('publikacjeKsiazka');
 Route::get('/filmy', [FilmyController::class, 'filmy'])->name('filmy');
 Route::get('/strony', [PomocniczyController::class, 'strony'])->name('strony');
