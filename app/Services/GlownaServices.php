@@ -312,7 +312,9 @@ class GlownaServices
     public static function formatowanieModlitwy($tekst)
     {
 
-
+        $tekst = Str::replace('<ak>', '</p><p class="akapit">', $tekst);
+        $tekst = Str::replace('<st>', '</p><h2 class="srodtytul">', $tekst);
+        $tekst = Str::replace('</st>', '</h2><p class="akapit">', $tekst);
         return $tekst;
 
     }

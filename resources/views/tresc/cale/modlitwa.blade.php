@@ -39,8 +39,8 @@
 
     @else
     <div class="row mb-4 mt-4">
-
-        <div class="col-10" style="text-indent: 1em; text-align: justify">
+        <div class="col-2"></div>
+        <div class="col-8" style=" text-align: justify">
             {!!  App\Services\GlownaServices::formatowanieModlitwy($modlitwa->tresc)!!}
         </div>
         <div class="col-2"></div>

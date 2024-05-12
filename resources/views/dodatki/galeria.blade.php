@@ -12,7 +12,7 @@
          {{-- src="{{URL::asset('zdjecia/'.$zdjecie->plik)}}"--}}
           data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
            class="img-thumbnail shadow-1-strong m-1"
-           alt="{{$zdjecie->opis}}"
+           alt="{{$zdjecie->opis}}. {{$zdjecie->autor}}"
            data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($zdjecie->plik))}}
       />
 

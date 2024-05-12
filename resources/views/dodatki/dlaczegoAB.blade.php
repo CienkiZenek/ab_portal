@@ -2,8 +2,8 @@
 <div class="card mb-3 text-bg-light" style="max-width: 776px;">
     <div class="row g-0">
         <div class="col-md-4">
-            <a href="/artykul/dlaczego-andrzej-bobola" data-mdb-ripple-init  data-mdb-ripple-color="white"><img
-                src="{{ URL::asset('/stat/andrzej-bobola.webp')}}"
+            <a href="/artykul/dlaczego-wlasnie-andrzej-bobola" data-mdb-ripple-init  data-mdb-ripple-color="white"><img
+                src="{{ URL::asset('/stat/andrzej_bobola_start.webp')}}"
                 alt="Obraz św. Andrzeja Boboli"
                 class="img-fluid rounded"
                 /></a>

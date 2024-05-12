@@ -131,7 +131,7 @@ body
 /* formatowanie wyświetlanych wiadomości, artykułów i biografii */
 .akapit
 {
-text-indent: 1em;
+    text-align: justify;
 }
 
 .srodtytul
@@ -151,10 +151,7 @@ font-weight: bold;
     font-size: small;
 }
 
-.akapit {
-text-indent: 1rem;
-    text-align: justify;
-}
+
 .brewiarz_h2{
     font-size: x-large;
     text-align: center;

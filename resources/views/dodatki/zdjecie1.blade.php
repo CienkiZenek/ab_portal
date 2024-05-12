@@ -1,10 +1,4 @@
-{{--<div class="lightbox" data-mdb-lightbox-init>
 
-                <img src="{{URL::asset('zdjecia/'.$zdjecie1)}}"
-                     class="img-fluid shadow-1-strong m-1 float-start"
-                     alt="{{$zdjecie1_podpis}}"/>
-
-</div>--}}
 
 <figure class="figure" >
     <div class="lightbox" data-mdb-lightbox-init>
@@ -19,6 +13,7 @@
         alt="{{$zdjecie1_podpis}}"
         data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($zdjecie1))}}
     /></div>
-    <figcaption class="figure-caption text-end">{{$zdjecie1_podpis}}</figcaption>
+    <figcaption class="figure-caption text-end">{{$zdjecie1_podpis}}</br>
+        {{\App\Models\Zdjecia::findOrFail($zdjecie1_id)->autor}}</figcaption>
 </figure>
 

@@ -31,30 +31,37 @@
 
     {{--Koniec h1 na podstonie--}}
 
+    {{--naglowek --}}
+    <div class="row justify-content-center">
+
+        <div class="col-lg-1"></div>
+        <div class="col-lg-9 col-sm-12 col-xs-12">
+
+            <div class=" mb-3 fw-bolder" style="text-align: justify; font-size:larger">{!!$wiadomosc->naglowek!!}</div>
+        </div>
+        <div class="col-lg-2 "></div>
+    </div>
+            {{-- koniec naglowek--}}
 
     <div class="row">
         <div class="col-lg-3"></div>
         <div class=" text-center col-lg-6  col-md-12">
-
-
             @if(Str::length($wiadomosc->zdjecie1)>1)
                 @include('dodatki.zdjecie1', ['zdjecie1'=>$wiadomosc->zdjecie1, 'zdjecie1_podpis'=>$wiadomosc->zdjecie1_podpis,'zdjecie1_id'=>$wiadomosc->zdjecie1_id])
             @endif
-
         </div></div>
 
 
 
 
 
-<div class="row justify-content-center">
 
+    <div class="row justify-content-center">
     <div class="col-lg-1"></div>
     <div class="col-lg-9 col-sm-12 col-xs-12">
         {{-- początek treści aktualnosci--}}
-        <div class="mb-3">Opublikowano: {{Carbon\Carbon::parse($wiadomosc->data)->format('d-m-Y')}}</div>
-        <div class=" mb-3" style="text-align: justify; text-indent: 1em;">{!!$wiadomosc->naglowek!!}</div>
-        <p class="akapit">
+
+                <p class="akapit">
             {!!  App\Services\GlownaServices::formatowanie($wiadomosc->tresc)!!}</p>
 
         @if(Str::length($wiadomosc->ramka1)>5)
@@ -98,12 +105,18 @@
 
         @endif
 
-            <div class=" mb-3">{{$wiadomosc->autor}}</div>
+
+
+            <div class=" mb-3 d-flex justify-content-end">{{$wiadomosc->autor}}</div>
+        <div class="mb-3 text-muted d-flex justify-content-end" style="font-size: small">Opublikowano: {{Carbon\Carbon::parse($wiadomosc->data)->format('d-m-Y')}}</div>
+
+
+
 
         @if(Str::length($wiadomosc->zrodlo)>1)
 
                 <div class=" mb-1 text-muted d-flex justify-content-end">
-                    {{$wiadomosc->zrodlo}}
+                   {{$wiadomosc->zrodlo}}
                 </div>
 
         @endif

@@ -1,5 +1,5 @@
     <div class="tlo-glowne0 border border-1  rounded-1">
-        <span class="text-decoration-none color-glowny ms-2"><i class="fas fa-question"></i><i class="fas fa-question"></i><i class="fas fa-question"></i> Czy wiesz, że...</span>
+        <span class="text-decoration-none color-glowny ms-2"><i class="fas fa-circle-question"></i> Czy wiesz, że... ?</span>
     </div>
 @if(session('czywieszTresc')=='')
     {{--<p>{{App\Services\GlownaServices::czyWieszLosowo()->tytul}}</p>--}}
