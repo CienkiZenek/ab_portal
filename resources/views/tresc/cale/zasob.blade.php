@@ -14,7 +14,7 @@
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
-            <li class="breadcrumb-item"><a href="{{route('zasoby')}}" class="color-glowny">Zasoby</a></li>
+            <li class="breadcrumb-item"><a href="{{route('zasoby')}}" class="color-glowny">Zdjęcia, dokumenty, książki</a></li>
             <li class="breadcrumb-item active" aria-current="page">
                 {{$zasob->nazwa}}
                 {{--{{App\Services\GlownaServices::limitSpacja($zasob->nazwa,40)}}--}}</li>

@@ -48,7 +48,7 @@ Route::get('/nowenna', [ModlitwyController::class, 'nowenna'])->name('nowenna');
 Route::get('/litania', [ModlitwyController::class, 'litania'])->name('litania');
 Route::get('/modlitwa-o-uchronienie-od-wojny', [ModlitwyController::class, 'uchronienieOdWojny'])->name('uchronienieOdWojny');
 Route::get('/modlitwa-o-nawrocenie-narodu', [ModlitwyController::class, 'nawrocenieNarodu'])->name('nawrocenieNarodu');
-Route::get('/zasoby', [ZasobyController::class, 'zasoby'])->name('zasoby');
+Route::get('/zdjecia-dokumenty-ksiazki', [ZasobyController::class, 'zasoby'])->name('zasoby');
 Route::get('/portrety', [ZasobyController::class, 'portrety'])->name('obrazyAndrzejaBoboli');
 Route::get('/artykuly', [ArtykulyController::class, 'artykuly'])->name('artykuly');
 Route::get('/aktualnosci', [WiadomosciController::class, 'wiadomosci'])->name('wiadomosci');
@@ -58,10 +58,10 @@ Route::get('/kalendarium', [KalendariumController::class, 'kalendarium'])->name(
 // koniec podstrony
 
 // strony z całymi tresciami
-Route::get('/wiadomosc/{slug}', [WiadomosciController::class, 'wiadomosc'])->name('wiadomosc');
+Route::get('/aktualnosci/{slug}', [WiadomosciController::class, 'wiadomosc'])->name('wiadomosc');
 Route::get('/artykul/{slug}', [ArtykulyController::class, 'artykul'])->name('artykul');
 Route::get('/czywiesz/{slug}', [PomocniczyController::class, 'czywiesz'])->name('czywiesz');
-Route::get('/zasob/{slug}', [ZasobyController::class, 'zasob'])->name('zasob');
+Route::get('/zdjecie-dokument-ksiazka/{slug}', [ZasobyController::class, 'zasob'])->name('zasob');
 Route::get('/modlitwa/{slug}', [ModlitwyController::class, 'modlitwa'])->name('modlitwa');
 Route::get('/film/{slug}', [FilmyController::class, 'film'])->name('film');
 

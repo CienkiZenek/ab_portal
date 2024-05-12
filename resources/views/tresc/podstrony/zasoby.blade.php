@@ -16,7 +16,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
 
-            <li class="breadcrumb-item active" aria-current="page">Zasoby</li>
+            <li class="breadcrumb-item active" aria-current="page">Zdjęcia, dokumenty, książki</li>
         </ol>
     </nav>
     {{-- Koniec breadcrumb--}}
@@ -24,7 +24,7 @@
 
     <div class="row mt-5 mb-2">
         <div class="col-12 text-center">
-            <h1 class="h1_podstrony fs-5 color-glowny">Zasoby portalu AndrzejBobola.info - dokumenty, pliki, książki, obrazy, zdjęcia wiązane ze św. Andrzejem Bobolą</h1>
+            <h1 class="h1_podstrony fs-5 color-glowny">Dokumenty, zdjęcia, książki związane ze św. Andrzejem Bobolą</h1>
 
         </div>
     </div>

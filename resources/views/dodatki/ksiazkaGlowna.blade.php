@@ -18,10 +18,7 @@
                     (...)
                 </p>
                 <a href="{{route('naszaKsiazka')}}" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="fas fa-book-open"></i> Więcej o książce</a>
-                <a href="{{route('gdzieKupic')}}" class="btn btn-primary" data-mdb-ripple-init><i class="fas fa-cart-arrow-down"></i> Gdzie kupić książkę?</a>
-                {{--<p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </p>--}}
+
             </div>
         </div>
     </div>

@@ -15,7 +15,7 @@
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
 
-            <li class="breadcrumb-item active" aria-current="page">Biogram</li>
+            <li class="breadcrumb-item active" aria-current="page">Biogram i historia kultu św. Andrzeja Boboli</li>
         </ol>
     </nav>
     {{-- Koniec breadcrumb--}}
@@ -23,7 +23,7 @@
 
     <div class="row mt-5 mb-5">
         <div class="col-12 text-center">
-            <h1 class="h1_podstrony fs-5 color-glowny">Kalendarium życia i kultu św. Andrzeja Boboli:</h1>
+            <h1 class="h1_podstrony fs-5 color-glowny">Biogram i historia kultu św. Andrzeja Boboli:</h1>
 
         </div>
     </div>

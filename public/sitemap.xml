@@ -19,7 +19,7 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://andrzejbobola.info/artykul/dlaczego-andrzej-bobola</loc>
+        <loc>https://andrzejbobola.info/artykul/dlaczego-wlasnie-andrzej-bobola</loc>
         <lastmod>2024-05-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>1.0</priority>
@@ -54,12 +54,7 @@
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
-    <url>
-        <loc>https://andrzejbobola.info/dzie-kupic-ksiazke-bozy-wojownik</loc>
-        <lastmod>2024-05-16</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
+
     <url>
         <loc>https://andrzejbobola.info/publikacjeKsiazka</loc>
         <lastmod>2024-05-16</lastmod>
@@ -73,29 +68,31 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://andrzejbobola.info/zasoby</loc>
+        <loc>https://andrzejbobola.info/zdjecia-dokumenty-ksiazki</loc>
         <lastmod>2024-05-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://andrzejbobola.info/zasob/encyklika-o-sw-andrzeju-boboli</loc>
+        <loc>https://andrzejbobola.info/zdjecie-dokument-ksiazka/encyklika-papieza-piusa-xii-invicti-athletae-christi</loc>
         <lastmod>2024-05-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://andrzejbobola.info/zasob/obrazy-sw-andrzeja-boboli</loc>
+        <loc>https://andrzejbobola.info/zdjecie-dokument-ksiazka/portrety-sw-andrzeja-boboli</loc>
         <lastmod>2024-05-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://andrzejbobola.info/zasob/powrot-relikwii-do-kraju-album-1938</loc>
+        <loc>https://andrzejbobola.info/zdjecie-dokument-ksiazka/powrot-relikwii-sw-andrzeja-boboli-do-kraju-po-kanonizacji-album-z-1938-r</loc>
         <lastmod>2024-05-16</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
+
+
     <url>
         <loc>https://andrzejbobola.info/modlitwy</loc>
         <lastmod>2024-05-16</lastmod>

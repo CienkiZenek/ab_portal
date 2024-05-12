@@ -115,7 +115,7 @@
                         role="button"
                         aria-expanded="false"
                     >
-                     Zawartość</a>
+                     Zasoby</a>
 
                     <ul class="dropdown-menu" aria-labelledby="tresc">
 
