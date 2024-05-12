@@ -67,7 +67,7 @@
     <div class="col-lg-1"></div>
     <div class="col-lg-9 col-sm-12 col-xs-12">
         {{-- początek treści artykulu--}}
-        <div class="mb-3">Opublikowano: {{Carbon\Carbon::parse($artykul->data)->format('d-m-Y')}}</div>
+
         <div class="mb-2" style="text-align: justify;">{!!$artykul->naglowek!!}</div>
 
         @if(Str::length($artykul->ramka2)>3)
@@ -82,7 +82,8 @@
                 <div class=" mb-3 note note-info" style="text-align: justify;">{!!$artykul->ramka1!!}</div>
         @endif
 
-        <div class=" mb-3">{{$artykul->autor}}</div>
+        <div class=" mb-3 d-flex justify-content-end">{{$artykul->autor}}</div>
+        <div class="mb-3 text-muted d-flex justify-content-end" style="font-size: small">Opublikowano: {{Carbon\Carbon::parse($artykul->data)->format('d-m-Y')}}</div>
 
         {{-- koniec treści artykulu--}}
     </div>
