@@ -43,8 +43,11 @@
 
             <img src="zdjecia/{{$item->zdjecie2}}" class="d-block w-100"
                  alt="" />
-            <div class="carousel-caption ">
-                <a href="/{{$item->nazwaRoute}}/{{$item->slug}}" class="text-white "><h6 class="bg-dark-subtle rounded-2">{{$item->tytulDodany}}</h6></a>
+            <div class="carousel-caption">
+                <a href="/{{$item->nazwaRoute}}/{{$item->slug}}" class="text-white ">
+                    <h6 class="bg-dark-subtle rounded-2">{{$item->tytulDodany}}</h6>
+
+                </a>
             </div>
                   {{--<div class="carousel-caption d-none d-md-block">
                 <a href="/{{$item->nazwaRoute}}/{{$item->slug}}" class="text-white "><h6 class="bg-dark-subtle rounded-2">{{$item->tytulDodany}}</h6></a>

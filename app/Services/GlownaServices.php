@@ -387,26 +387,32 @@ class GlownaServices
             $numer++;
             switch ($item->gatunek) {
                 case 'wiadomosc':
-                    $item->tytulDodany = GlownaServices::limitSpacja($item->tytul, 50);
+                    /*$item->tytulDodany = GlownaServices::limitSpacja($item->tytul, 50);*/
+                    $item->tytulDodany = $item->tytul;
                     $item->naglowekDodany = $item->naglowek;
                     $item->typTresci = 'Aktualność';
                     $item->nazwaRoute = 'aktualnosci';
                     break;
                 case 'artykul':
-                    $item->tytulDodany = GlownaServices::limitSpacja($item->tytul, 50);
+                   /* $item->tytulDodany = GlownaServices::limitSpacja($item->tytul, 50);*/
+                    $item->tytulDodany = $item->tytul;
                     $item->naglowekDodany = $item->naglowek;
                     $item->typTresci = 'Artykuł';
                     $item->nazwaRoute = 'artykul';
                     break;
                 case 'zasob':
-                    $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);
-                    $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 70);
+                    /*$item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);*/
+                    $item->tytulDodany = $item->nazwa;
+                    /*$item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 70);*/
+                    $item->naglowekDodany = $item->opis;
                     $item->typTresci = 'Zdjęcie, dokument, książka';
                     $item->nazwaRoute = 'zdjecie-dokument-ksiazka';
                     break;
                 case 'modlitwa':
-                    $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);
-                    $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 70);
+                   /* $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);*/
+                    $item->tytulDodany = $item->nazwa;
+                    /*$item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 70);*/
+                    $item->naglowekDodany = $item->opis;
                     $item->typTresci = 'Modlitwa';
                     $item->nazwaRoute = 'modlitwa';
                     break;

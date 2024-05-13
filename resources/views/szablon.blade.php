@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="@yield('description', 'Portal poświęcony św. Andrzejowi Boboli')">
     <meta name="keywords" content="@yield('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych, relikwie')">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561469657068826"
+            crossorigin="anonymous"></script>
+
     <title>@yield('title', 'AndrzejBobola.info')</title>
     <link rel="icon" type="image/png" sizes="48x48"   href="{{ URL::asset('/stat/favicon.webp')}}">
 
