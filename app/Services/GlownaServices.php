@@ -402,7 +402,7 @@ class GlownaServices
                     $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);
                     $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 70);
                     $item->typTresci = 'Zdjęcie, dokument, książka';
-                    $item->nazwaRoute = 'zasob';
+                    $item->nazwaRoute = 'zdjecie-dokument-ksiazka';
                     break;
                 case 'modlitwa':
                     $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);

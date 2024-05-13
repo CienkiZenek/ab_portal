@@ -123,7 +123,7 @@
             <ul  class="list-unstyled mb-0  ms-2">
                 @foreach($modlitwyStart as $modlitwa)
                     <li><a href="{{route('modlitwa',$modlitwa->slug)}}"
-                           class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($modlitwa->nazwa,40)}}</a>
+                           class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($modlitwa->nazwa,72)}}</a>
                     </li>
                 @endforeach
             </ul>

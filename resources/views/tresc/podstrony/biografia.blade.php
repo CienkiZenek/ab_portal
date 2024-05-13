@@ -158,12 +158,12 @@
             <figure class="figure">
                 <img
                     data-mdb-lazy-load-init
-                    data-mdb-lazy-src="{{URL::asset('/stat/zdjecia/kosciol_sw_Andrzeja_Boboli_Warszawa_05.webp')}}"
+                    data-mdb-lazy-src="{{URL::asset('/zdjecia/kosciol_sw_Andrzeja_Boboli_Warszawa_05.webp')}}"
                     {{--src="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2.webp')}}"--}}
                     data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
                     alt="Sanktuarium św. Andrzeja Boboli w Warszawie."
                     class="img-fluid rounded w-100 shadow-1-strong rounded"
-                    data-mdb-img="{{ URL::asset('/stat/zdjecia/kosciol_sw_Andrzeja_Boboli_Warszawa_duze_05.webp')}}"
+                    data-mdb-img="{{ URL::asset('/zdjecia/kosciol_sw_Andrzeja_Boboli_Warszawa_duze_05.webp')}}"
 
                 />
                 <figcaption class="figure-caption text-end">Sanktuarium św. Andrzeja Boboli w Warszawie. Fot. br. Damian Wojciechowski SJ</figcaption>
