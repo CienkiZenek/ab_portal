@@ -84,7 +84,7 @@
                   </a>
                     <div class="card-body">
                     <h5 class="card-title">Relikwie</h5>
-                    <p class="card-text">W Twoim kościele modlicie się do św. Andrzeja Boboli? A może chesz zapoczątkować w nim jego kult?</p>
+                    <p class="card-text">W Twoim kościele modlicie się do św. Andrzeja Boboli? A może chcesz zapoczątkować jego kult?</p>
                     <a href="{{route('relikwie')}}" class="btn btn-primary  w-100 shadow-5" data-mdb-ripple-init><i class='fas fa-church'></i> Relikwie dla Twojego kościoła</a>
 
                 </div>
@@ -120,10 +120,13 @@
             <div class="tlo-glowne0 border border-1  rounded-1">
                 <span class="text-decoration-none color-glowny ms-2"><a href="{{route('modlitwy')}} " class="color-glowny"><i class="fas fa-hands-praying"></i> Modlitwy</a></span>
             </div>
-            <div class="ms-2"><a href="/modlitwa/modlitwa-o-uchronienie-polski-od-wojny" class="color-glowny">Modlitwa o uchronienie Polski od wojny</a></div>
-            <div class="ms-2"><a href="/modlitwa/nowenna-do-sw-andrzeja-boboli" class="color-glowny">Nowenna do św. Andrzeja Boboli</a></div>
-            <div class="ms-2"><a href="/modlitwa/litania-do-sw-andrzeja-boboli" class="color-glowny">Litania do św. Andrzeja Boboli</a></div>
-
+            <ul  class="list-unstyled mb-0  ms-2">
+                @foreach($modlitwyStart as $modlitwa)
+                    <li><a href="{{route('modlitwa',$modlitwa->slug)}}"
+                           class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($modlitwa->nazwa,40)}}</a>
+                    </li>
+                @endforeach
+            </ul>
         </div>
 
     <div class="col-lg-5 col-md-12 col-sm-12  border border-1 rounded-1 ps-0 pe-0 shadow-5">
@@ -131,9 +134,13 @@
         <div class="tlo-glowne0 border border-1  rounded-1">
             <span class="text-decoration-none color-glowny ms-2"><a href="{{route('zasoby')}} " class="color-glowny"><i class="fas fa-swatchbook"></i> Zdjęcia, dokumenty, książki</a></span>
         </div>
-        <div class="ms-2"><a href="/zdjecie-dokument-ksiazka/portrety-sw-andrzeja-boboli" class="color-glowny">Portrety św. Andrzeja Boboli</a></div>
-        <div class="ms-2"><a href="/zdjecie-dokument-ksiazka/powrot-relikwii-sw-andrzeja-boboli-do-kraju-po-kanonizacji-album-z-1938-r" class="color-glowny">Powrót relikwii do kraju (Album 1938)</a></div>
-        <div class="ms-2"><a href="/zdjecie-dokument-ksiazka/encyklika-papieza-piusa-xii-invicti-athletae-christi" class="color-glowny">Encyklika o św. Andrzeju Boboli</a></div>
+        <ul  class="list-unstyled mb-0  ms-2">
+            @foreach($zasobyStart as $zasob)
+                <li><a href="{{route('zasob',$zasob->slug)}}"
+                       class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($zasob->nazwa,40)}}</a>
+                </li>
+            @endforeach
+        </ul>
     </div>
 
 </div>
@@ -159,7 +166,14 @@
             <span class="text-decoration-none color-glowny ms-2"><i class="fas fa-film color-glowny"></i> <a href="{{route('filmy')}}" class="color-glowny">Filmy</a></span>
         </div>
 
-        <div class="ms-2"><a href="/film/powrot-relikwii-sw-andrzeja-boboli-do-polski-1938" class="color-glowny">Powrót relikwii do kraju (Film 1938)</a></div>
+        <ul  class="list-unstyled mb-0  ms-2">
+            @foreach($filmyStart as $film)
+                <li><a href="{{route('film',$film->slug)}}"
+                       class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($film->tytul,40)}}</a>
+                </li>
+            @endforeach
+        </ul>
+
     </div>
 
 </div>

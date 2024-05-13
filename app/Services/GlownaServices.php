@@ -373,9 +373,9 @@ class GlownaServices
     public static function karuzelaZbior()
     {
 
-        $wiadomosciKaruzela = Wiadomosci::where('strona_glowna', 'tak')->orderBy('updated_at', 'asc')->get();
+        $wiadomosciKaruzela = Wiadomosci::where('strona_glowna', 'tak')->where('status','Opublikowana')->where('data', '<=', Today())->orderBy('updated_at', 'asc')->get();
         $zasobyKaruzela = Zasoby::where('strona_glowna', 'tak')->orderBy('updated_at', 'asc')->get();
-        $artykulyKaruzela = Artykuly::where('strona_glowna', 'tak')->orderBy('updated_at', 'asc')->get();
+        $artykulyKaruzela = Artykuly::where('strona_glowna', 'tak')->where('status','Opublikowany')->orderBy('updated_at', 'asc')->get();
         $modlitwyKaruzela = Modlitwy::where('strona_glowna', 'tak')->orderBy('updated_at', 'asc')->get();
 
         $karuzela = $wiadomosciKaruzela->concat($zasobyKaruzela)->concat($artykulyKaruzela)->concat($modlitwyKaruzela);
@@ -389,8 +389,8 @@ class GlownaServices
                 case 'wiadomosc':
                     $item->tytulDodany = GlownaServices::limitSpacja($item->tytul, 50);
                     $item->naglowekDodany = $item->naglowek;
-                    $item->typTresci = 'Wiadomość';
-                    $item->nazwaRoute = 'wiadomosc';
+                    $item->typTresci = 'Aktualność';
+                    $item->nazwaRoute = 'aktualnosci';
                     break;
                 case 'artykul':
                     $item->tytulDodany = GlownaServices::limitSpacja($item->tytul, 50);
@@ -401,7 +401,7 @@ class GlownaServices
                 case 'zasob':
                     $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);
                     $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 70);
-                    $item->typTresci = 'Zasób';
+                    $item->typTresci = 'Zdjęcie, dokument, książka';
                     $item->nazwaRoute = 'zasob';
                     break;
                 case 'modlitwa':

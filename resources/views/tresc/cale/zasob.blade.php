@@ -47,19 +47,19 @@
 
         </div>
         <div class="col-lg-9 col-sm-12 col-xs-12">
-           <div class="row mb-4"><div class="col-1">
+            @if(Str::length($zasob->opis)>4)
+           <div class="row mb-4">
+               <div class="col-1">
                    <div class="vr" style="width: 5px; background-color: #3F51B5; height: 100%"></div>
                </div>
-            {{-- <div class="vr" style="width: 5px; background-color: #d63384; height: 100%"></div>--}}
-
-               @if(Str::length($zasob->opis)>4)
                <div class="col-11 p-2 bg-light rounded">
             <p style="text-align: justify; text-indent: 1em">
                 {!!  App\Services\GlownaServices::formatowanie($zasob->opis)!!}
-                {{--{{$zasob->opis}}--}}</p>
+                </p>
            </div>
-               @endif
+
         </div>
+            @endif
             @if(Str::length($zasob->zdjecie1)>4)
                 <div class="row d-flex justify-content-center">
                     <div class="col-6 ">

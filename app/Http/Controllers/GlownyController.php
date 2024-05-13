@@ -32,6 +32,11 @@ class GlownyController extends Controller
         $wiadomosciStart=Wiadomosci::orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','nie')->where('data', '<=', Today())->limit(5)->get();
         $wiadomosciPrzyklejone=Wiadomosci::orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','tak')->where('data', '<=', Today())->get();
         $artykulyStart=Artykuly::orderBy('created_at', 'asc')->where('status','Opublikowany')->limit(10)->get();
+        $filmyStart=Filmy::orderBy('created_at', 'asc')->limit(10)->get();
+        $modlitwyStart=Modlitwy::orderBy('created_at', 'asc')->limit(10)->get();
+        $zasobyStart=Zasoby::orderBy('created_at', 'asc')->limit(10)->get();
+
+
         // wybieranie losowego "Czy wiesz że...":
 
         $czywiesz=GlownaServices::czyWieszLosowo();
@@ -52,6 +57,9 @@ $kalendariumPojutrze=GlownaServices::kalendariumNaPoJutrze();
 /*'ksiegarnieStart'=>$ksiegarnieStart,*/
 'wiadomosciStart'=>$wiadomosciStart,
 'wiadomosciPrzyklejone'=>$wiadomosciPrzyklejone,
+'filmyStart'=>$filmyStart,
+'modlitwyStart'=>$modlitwyStart,
+'zasobyStart'=>$zasobyStart,
 'kalendariumDzis'=>$kalendariumDzis,
 'kalendariumJutro'=>$kalendariumJutro,
 'kalendariumPojutrze'=>$kalendariumPojutrze,

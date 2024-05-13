@@ -54,6 +54,21 @@
 
 
         <p class="akapit">Święty Andrzej Bobola, wedle wszelkiego prawdopodobieństwa, przyszedł na świat w Strachocinie niedaleko Sanoka na Podkarpaciu, 30 listopada 1591 roku. Pochodził ze średniozamożnej szlachty herbu Leliwa, zasłużonej dla Kościoła i zakonu jezuitów, który w tamtym czasie stanowił w Polsce główny filar kontrreformacji. Ród jego pozostawał wierny Kościołowi. Źródła podają, że żaden z członków rodu nie przeszedł na protestantyzm. </p>
+        <div class="text-center lightbox" data-mdb-lightbox-init data-mdb-zoom-level="0.25">
+            <figure class="figure">
+                <img
+                    data-mdb-lazy-load-init
+                    data-mdb-lazy-src="{{URL::asset('/stat/zdjecia_podstrony/strachocina_bobolowka_duze_01.webp')}}"
+                    {{--src="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2.webp')}}"--}}
+                    data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
+                    alt="Strachocina - Bobolówka."
+                    class="img-fluid rounded w-100 shadow-1-strong rounded"
+                    data-mdb-img="{{ URL::asset('/stat/zdjecia_podstrony/strachocina_bobolowka_duze_01.webp')}}"
+                />
+                <figcaption class="figure-caption text-end">Strachocina - Bobolówka. W miejscu, gdzie kiedyś stał dwór Bobolów, powstał ośrodek kultu św. Andrzeja Boboli. Fot. Redakcja.</figcaption>
+            </figure>
+        </div>
+
         <p class="akapit">Skończył jezuickie kolegium w Brunsberdze (Braniewie). Tu nauczył się łaciny, zdobył sztukę wymowy i biegłą znajomość języka greckiego, co np. ułatwiło mu później czytanie dzieł greckich ojców Kościoła w oryginale oraz dyskusje z prawosławnymi duchownymi.</p>
 
         <h2 class="srodtytul"><a name="Formacja"></a>Formacja zakonna</h2>
@@ -110,6 +125,22 @@
 
         <h2 class="srodtytul"><a name="Kanonizacja"></a>Kanonizacja i powrót do Ojczyzny</h2>
         <p class="akapit">17 kwietnia 1938 roku, w uroczystość Zmartwychwstania Pańskiego, Pius XI dokonał kanonizacji bł. Andrzeja. Na wydarzenie to do Rzymu przybyło kilkadziesiąt tysięcy Polaków. Wielu z nich przyjechało z Polski specjalnymi pociągami. </p>
+
+        <div class="text-center lightbox" data-mdb-lightbox-init data-mdb-zoom-level="0.25">
+            <figure class="figure">
+                <img
+                    data-mdb-lazy-load-init
+                    data-mdb-lazy-src="{{URL::asset('/stat/zdjecia_podstrony/kanonizacja_Andrzeja_Boboli_Rzym_17-04-1938.webp')}}"
+                    {{--src="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2.webp')}}"--}}
+                    data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
+                    alt="Papież Pius XI kanonizuje Andrzeja Bobolę - 17 kwietnia 1938 r."
+                    class="img-fluid rounded w-100 shadow-1-strong rounded"
+                    data-mdb-img="{{ URL::asset('/stat/zdjecia_podstrony/kanonizacja_Andrzeja_Boboli_Rzym_17-04-1938_duze.webp')}}"
+                />
+                <figcaption class="figure-caption text-end">Papież Pius XI kanonizowł Andrzeja Bobolę na Wielkanoc (17 kwietnia) 1938 r.</figcaption>
+            </figure>
+        </div>
+
         <p class="akapit">W czerwcu roku 1938 relikwie św. Andrzeja zostały uroczyście przewiezione do kraju. Przejazd relikwii specjalnym pociągiem przez Lublianę i Budapeszt, a następnie przez wiele polskich miast (w tym Kraków, Katowice, Poznań, Łódź aż do Warszawy), był wielkim wydarzeniem. W każdym mieście na trasie organizowano uroczystości ku czci świętego męczennika. W Warszawie podczas uroczystości, na Placu Zamkowym prezydent Ignacy Mościcki złożył na trumnie Andrzeja Boboli jako wotum swój Krzyż Niepodległości. Na koniec kilkudniowych uroczystości w Warszawie relikwie w srebrno-kryształowej trumnie-relikwiarzu spoczęły w kaplicy jezuitów przy ul. Rakowieckiej.</p>
         <p class="akapit">We wrześniu 1939 r. zostały przeniesione do kościoła jezuitów na Starym Mieście w Warszawie. W czasie Powstania Warszawskiego trumnę przeniesiono do dominikańskiego kościoła św. Jacka. W lutym 1945 wróciła ona do kaplicy jezuitów przy ul. Rakowieckiej. Tam do dziś szczątki doznają czci w wybudowanym w 1989 r. kościele św. Andrzeja Boboli, podniesionym do rangi sanktuarium narodowego. </p>
 
@@ -123,7 +154,22 @@
 
         <p class="akapit">U schyłku PRL zaczęły się znowu ukazywać książki i artykuły o św. Andrzeju, a jego kult ożył. Przyczyniło się do tego kolejne nadzwyczajne zdarzenie – począwszy od 1982 r. męczennik ukazywał się przez cztery lata ks. Józefowi Niżnikowi w miejscu swojego urodzenia, w Strachocinie. Kiedy ksiądz wreszcie odważył się zapytać „zjawę”, czego chce, usłyszał: „Jestem św. Andrzej Bobola. Zacznijcie mnie czcić w Strachocinie”. Dzięki staraniom ks. Niżnika powstał tam prężny ośrodek kultu poleskiego męczennika.</p>
         <p class="akapit">W kwietniu 2002 r. watykańska Kongregacja Kultu Bożego i Dyscypliny Sakramentów, przychylając się do prośby prymasa Polski kard. Józefa Glempa, ogłosiła św. Andrzeja Bobolę drugorzędnym patronem Polski.</p>
+        <div class="text-center lightbox" data-mdb-lightbox-init data-mdb-zoom-level="0.25">
+            <figure class="figure">
+                <img
+                    data-mdb-lazy-load-init
+                    data-mdb-lazy-src="{{URL::asset('/stat/zdjecia/kosciol_sw_Andrzeja_Boboli_Warszawa_05.webp')}}"
+                    {{--src="{{ URL::asset('/stat/relikwie-andrzeja-boboli-warszawa2.webp')}}"--}}
+                    data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
+                    alt="Sanktuarium św. Andrzeja Boboli w Warszawie."
+                    class="img-fluid rounded w-100 shadow-1-strong rounded"
+                    data-mdb-img="{{ URL::asset('/stat/zdjecia/kosciol_sw_Andrzeja_Boboli_Warszawa_duze_05.webp')}}"
 
+                />
+                <figcaption class="figure-caption text-end">Sanktuarium św. Andrzeja Boboli w Warszawie. Fot. br. Damian Wojciechowski SJ</figcaption>
+            </figure>
+
+        </div>
 
 
     </div>

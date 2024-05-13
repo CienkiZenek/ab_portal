@@ -12,7 +12,7 @@
             <div class="card-body">
                 <h5 class="card-title color-glowny">Dlaczego Andrzej Bobola?</h5>
                 <p class="card-text ">
-                    Kult św. Andrzeja Boboli, jezuickiego męczennik z XVII w., zatacza coraz szersze kręgi!
+                    Kult św. Andrzeja Boboli, jezuickiego męczennika z XVII w., zatacza coraz szersze kręgi!
                 </p>
                 <a href="/artykul/dlaczego-wlasnie-andrzej-bobola" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="far fa-circle-question"></i> Dlaczego właśnie Andrzej Bobola?</a>
 

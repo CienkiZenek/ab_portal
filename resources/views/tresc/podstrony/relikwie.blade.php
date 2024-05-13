@@ -41,7 +41,7 @@
                     data-mdb-img="{{ URL::asset('/stat/relikwiarz_Andrzeja_Boboli_kaplica_sejmowa_duze.webp')}}"
 
                 />
-                <figcaption class="figure-caption text-end">Relikwiarz św. Andrzeja Boboli w kaplicy sejmowej. </figcaption>
+                <figcaption class="figure-caption text-end">Relikwiarz św. Andrzeja Boboli w kaplicy sejmowej. Fot. Redakcja</figcaption>
             </figure>
 
         </div>
@@ -50,15 +50,12 @@
     <div class="row">
         <div class="col-lg-1"></div>
         <div class="col-lg-9 col-md-12">
-    <p class="akapit">Jeśli w Twoim kościele istnieje kult św. Andrzeja Boboli, lub istnieje pragnienie zapoczątkować
-        go, to jest możliwość zdobycia relikwi cząstkowych tego świętego męczennika! </p>
-    <p class="akapit">W tym celu należy zwrócić się do proboszcza parafii św. Andrzeja Boboli, gdzie znajdują się
-        integralne relikwie św. Andrzeja Boboli.</p>
+    <p class="akapit">Jeśli w Twoim kościele istnieje kult św. Andrzeja Boboli albo ktoś chce go zapoczątkować, istnieje możliwość uzyskania relikwii cząstkowych świętego męczennika.</p>
+    <p class="akapit">W tym celu należy się zwrócić do proboszcza parafii św. Andrzeja Boboli w Warszawie, gdzie znajdują się integralne relikwie.</p>
     <p class="">Należy napisać na adres:</p>
     ul. Rakowiecka 61
     </br> 02-532 Warszawa</p>
-    <p class="akapit">Pamiętaj, aby wesprzeć, organizacyjnie i materialnie (np. koszt wykonania stosownego relikwiarza)
-        w tym przedsięwzięciu swoich duszpasterzy!</p>
+    <p class="akapit">Pamiętaj, żeby wesprzeć organizacyjnie i materialnie (np. w zakupie stosownego relikwiarza) swoich duszpasterzy w tym przedsięwzięciu!</p>
 
     </div>
     </div>

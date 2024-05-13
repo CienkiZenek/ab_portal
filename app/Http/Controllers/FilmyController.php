@@ -10,7 +10,7 @@ class FilmyController extends Controller
 {
 
     public function filmy(){
-        $filmy=Filmy::orderBy('created_at', 'desc')->paginate(10);
+        $filmy=Filmy::orderBy('created_at', 'asc')->paginate(10);
         return view('tresc.podstrony.filmy', ['Wyniki'=>$filmy]);
 
     }
