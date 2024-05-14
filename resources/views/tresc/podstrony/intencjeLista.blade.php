@@ -35,7 +35,7 @@
 
     @foreach($Wyniki as $intencja)
 
-        <div class="col-8 offset-1" style="text-align: justify; text-indent: 1em; font-size:small;"> {{$intencja->tresc_opublikowana}}</div>
+        <div class="col-8 offset-1" style="text-align: justify; "> {{$intencja->tresc_opublikowana}}</div>
         <div class="col-8 offset-1 mt-1 mb-4 text-muted" style="font-size: x-small">Przesłano: {{Carbon\Carbon::parse($intencja->created_at)->format('d-m-Y')}}</div>
 
     @endforeach
