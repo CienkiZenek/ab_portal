@@ -49,7 +49,7 @@
 
         <div class="row mb-3 gap-lg-4">
 
-            @if ($kalendariumDzis->count()>0 || $kalendariumJutro->count()>0 || $kalendariumPojutrze->count()>0)
+            @if ($kalendariumDzis->count()>0) /*|| $kalendariumJutro->count()>0 || $kalendariumPojutrze->count()>0*/
 
                 <div class="col-lg-5 col-md-12 col-sm-12 border border-1 rounded-1 ps-0 pe-0 mb-2 mb-lg-0 ms-lg-5 shadow-5">
                 @include('dodatki.kalendarium', ['kalendariumDzis'=>$kalendariumDzis, 'kalendariumJutro'=>$kalendariumJutro, 'kalendariumPojutrze'=>$kalendariumPojutrze])
