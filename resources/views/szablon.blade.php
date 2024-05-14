@@ -30,6 +30,15 @@
     <link rel="stylesheet" href="{{ URL::asset('/css/style.css?v='.config('Bobola.wersja'))}}">
 
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q01DL1L1FM"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-Q01DL1L1FM');
+</script>
 <body >
 
 {{--
@@ -229,6 +238,20 @@
     <div class="mb-3"></div>
     @yield('tresc')
 
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561469657068826"
+            crossorigin="anonymous"></script>
+    <!-- AB-portal -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-3561469657068826"
+         data-ad-slot="1132656567"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
   {{--  <div class="row border border-1 p-2 bg-light rounded-1">
         <div class="col-lg-12 col-md-12 col-sm-12 fs-6">
             --}}{{--reklama googla--}}{{--
@@ -247,6 +270,7 @@
 
 
     </div>--}}
+
 
     <button onclick="topFunction()" id="myBtn" title="Do góry" data-mdb-ripple-init data-mdb-ripple-color="white">&nbsp;<i class="fas fa-arrow-up-long fa-2x"></i>&nbsp;{{--Do góry--}}</button>
     @if(!isset($strona_glowna))
