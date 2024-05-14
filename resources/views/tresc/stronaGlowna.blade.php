@@ -169,7 +169,7 @@
         <ul  class="list-unstyled mb-0  ms-2">
             @foreach($filmyStart as $film)
                 <li><a href="{{route('film',$film->slug)}}"
-                       class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($film->tytul,40)}}</a>
+                       class="text-decoration-none color-glowny ">{{$film->tytul}}</a>
                 </li>
             @endforeach
         </ul>

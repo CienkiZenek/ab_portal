@@ -272,8 +272,13 @@ class GlownaServices
             switch (get_class($item)) {
                 case 'App\Models\Wiadomosci':
                     $item->tytulPowiazania = $item->tytul;
-                    $item->typTresci = 'Wiadomość';
-                    $item->nazwaRoute = 'wiadomosc';
+                    $item->typTresci = 'Aktualności';
+                    $item->nazwaRoute = 'aktualności';
+                    break;
+                case 'App\Models\Artykuly':
+                    $item->tytulPowiazania = $item->tytul;
+                    $item->typTresci = 'Artykuły';
+                    $item->nazwaRoute = 'artykuly';
                     break;
                 case 'App\Models\Filmy':
                     $item->tytulPowiazania = $item->tytul;
@@ -281,14 +286,14 @@ class GlownaServices
                     $item->nazwaRoute = 'film';
                     break;
                 case 'App\Models\Modlitwy':
-                    $item->tytulPowiazania = GlownaServices::limitSpacja($item->nazwa, 50);
+                    $item->tytulPowiazania = $item->nazwa;
                     $item->typTresci = 'Modlitwa';
                     $item->nazwaRoute = 'modlitwa';
                     break;
                 case 'App\Models\Zasoby':
-                    $item->tytulPowiazania = GlownaServices::limitSpacja($item->nazwa, 50);
-                    $item->typTresci = 'Zasób';
-                    $item->nazwaRoute = 'zasob';
+                    $item->tytulPowiazania = $item->nazwa;
+                    $item->typTresci = 'Zdjęcia, dokumenty, książki';
+                    $item->nazwaRoute = 'zdjecie-dokument-ksiazka';
                     break;
 
             }
@@ -329,8 +334,8 @@ class GlownaServices
                 case 'wiadomosc':
                     $item->tytulDodany = $item->tytul;
                     $item->naglowekDodany = $item->naglowek;
-                    $item->typTresci = 'Wiadomość';
-                    $item->nazwaRoute = 'wiadomosc';
+                    $item->typTresci = 'Aktualności';
+                    $item->nazwaRoute = 'aktualnosci';
                     break;
                 case 'artykul':
                     $item->tytulDodany = $item->tytul;
@@ -338,12 +343,12 @@ class GlownaServices
                     $item->typTresci = 'Artykuł';
                     $item->nazwaRoute = 'artykul';
                     break;
-                case 'biografia':
+                /*case 'biografia':
                     $item->tytulDodany = $item->tytul;
                     $item->naglowekDodany = $item->naglowek;
                     $item->typTresci = 'Biografia';
                     $item->nazwaRoute = 'biografia';
-                    break;
+                    break;*/
                 case 'film':
                     $item->tytulDodany = $item->tytul;
                     $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 220);
@@ -351,16 +356,16 @@ class GlownaServices
                     $item->nazwaRoute = 'film';
                     break;
                 case 'modlitwa':
-                    $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);
+                    $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 75);
                     $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 220);
                     $item->typTresci = 'Modlitwa';
                     $item->nazwaRoute = 'modlitwa';
                     break;
                 case 'zasob':
-                    $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 50);
+                    $item->tytulDodany = GlownaServices::limitSpacja($item->nazwa, 70);
                     $item->naglowekDodany = GlownaServices::limitSpacja($item->opis, 220);
-                    $item->typTresci = 'Zasób';
-                    $item->nazwaRoute = 'zasob';
+                    $item->typTresci = 'Zdjęcia, dokumenty, książki';
+                    $item->nazwaRoute = 'zdjecie-dokument-ksiazka';
                     break;
 
             }

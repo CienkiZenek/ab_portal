@@ -170,16 +170,16 @@ $kalendariumPojutrze=GlownaServices::kalendariumNaPoJutrze();
 
 
         // wyszukiwanie w biografii
-        $WynikiBiografia=Biografia::where('tytul', 'like', "%$szukane%")
+        /*$WynikiBiografia=Biografia::where('tytul', 'like', "%$szukane%")
             ->orWhere('tresc', 'like', "%$szukane%")
             ->orWhere('naglowek', 'like', "%$szukane%")
             ->orWhere('zdjecie1_podpis', 'like', "%$szukane%")
             ->orWhere('zdjecie2_podpis', 'like', "%$szukane%")
             ->orWhere('ramka1', 'like', "%$szukane%")
             ->orWhere('ramka2', 'like', "%$szukane%")
-            ->get();
+            ->get();*/
 
-        $wynikWyszukiwaniaSurowe=$WynikiWiadomosci->concat($WynikiArtykuly)->concat($WynikiBiografia)->concat($WynikiModlitwy)->concat($WynikiZasoby)->concat($WynikiFilmy);
+        $wynikWyszukiwaniaSurowe=$WynikiWiadomosci->concat($WynikiArtykuly)->concat($WynikiModlitwy)->concat($WynikiZasoby)->concat($WynikiFilmy);
         $wynikWyszukiwania=GlownaServices::wynikWyszukiwania($wynikWyszukiwaniaSurowe);
        //dd($wynikWyszukiwania);
         if($wynikWyszukiwania->count()>0){
