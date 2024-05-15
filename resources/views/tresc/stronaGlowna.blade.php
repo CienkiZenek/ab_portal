@@ -40,7 +40,7 @@
 <ul class="list-unstyled mb-1  ms-2">
            @foreach($wiadomosciStart as $wiadomosc)
         <li class="hover-shadow rounded-1"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
-                        class="text-decoration-none color-glowny ms-1">{{App\Services\GlownaServices::limitSpacja($wiadomosc->tytul,40)}}</a>
+                        class="text-decoration-none color-glowny ms-1">{{$wiadomosc->tytul}}</a>
         </li>
             @endforeach
 </ul>
