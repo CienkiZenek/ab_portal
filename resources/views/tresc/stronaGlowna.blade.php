@@ -31,7 +31,7 @@
                 <li  class="hover-shadow rounded-1"><i class="fa-solid fa-thumbtack me-1 text-warning fa-rotate-by ms-1" style="--fa-rotate-angle: 45deg;" ></i>
                     <a href="{{route('wiadomosc',$wiadomosc->slug)}}"
                         class="text-decoration-none color-przyklejone text-warning ">
-                        {{App\Services\GlownaServices::limitSpacja($wiadomosc->tytul,40)}}</a>
+                        {{$wiadomosc->tytul}}</a>
                 </li>
             @endforeach
         </ul>
@@ -137,7 +137,7 @@
         <ul  class="list-unstyled mb-0  ms-2">
             @foreach($zasobyStart as $zasob)
                 <li><a href="{{route('zasob',$zasob->slug)}}"
-                       class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($zasob->nazwa,40)}}</a>
+                       class="text-decoration-none color-glowny ">{{$zasob->nazwa}}</a>
                 </li>
             @endforeach
         </ul>
@@ -154,7 +154,7 @@
         <ul  class="list-unstyled mb-0  ms-2">
             @foreach($artykulyStart as $artykul)
                 <li><a href="{{route('artykul',$artykul->slug)}}"
-                       class="text-decoration-none color-glowny ">{{App\Services\GlownaServices::limitSpacja($artykul->tytul,40)}}</a>
+                       class="text-decoration-none color-glowny ">{{$artykul->tytul}}</a>
                 </li>
             @endforeach
         </ul>
