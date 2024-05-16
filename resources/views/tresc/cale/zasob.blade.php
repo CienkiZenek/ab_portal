@@ -4,7 +4,7 @@
 @section('keywords', $zasob->keywords)
 {{-- social udostępnanie--}}
 @if(Str::length($zasob->zdjecie1)>1)
-    @section('image', '/zdjecia/'.$zasob->zdjecie1)
+    @section('og:image', '/zdjecia/'.$zasob->zdjecie1)
 @endif
 @section('og_url', Request::url())
 @section('og_title', $zasob->title)

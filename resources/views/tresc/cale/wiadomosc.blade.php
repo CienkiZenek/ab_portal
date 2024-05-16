@@ -4,7 +4,7 @@
 @section('keywords', $wiadomosc->keywords)
 {{-- social udostępnanie--}}
 @if(Str::length($wiadomosc->zdjecie1)>1)
-@section('image', '/zdjecia/'.$wiadomosc->zdjecie1)
+@section('og:image', '/zdjecia/'.$wiadomosc->zdjecie1)
 @endif
 @section('og_url', Request::url())
 @section('og_title', $wiadomosc->title)
