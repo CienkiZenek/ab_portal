@@ -35,7 +35,7 @@
     <div class="row">
         <div class="col-lg-3"></div>
         <div class=" text-center col-lg-6  col-md-12">
-            @if(Str::length($wiadomosc->zdjecie1)>1)
+            @if(Str::length($modlitwa->zdjecie1)>1)
                 @include('dodatki.zdjecie1', ['zdjecie1'=>$modlitwa->zdjecie1, 'zdjecie1_podpis'=>$modlitwa->zdjecie1_podpis,'zdjecie1_id'=>$modlitwa->zdjecie1_id])
             @endif
         </div></div>
