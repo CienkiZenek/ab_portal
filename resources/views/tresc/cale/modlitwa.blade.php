@@ -3,6 +3,9 @@
 @section('description', $modlitwa->description)
 @section('keywords', $modlitwa->keywords)
 {{-- social udostępnanie--}}
+@if(Str::length($modlitwa->zdjecie1)>1)
+    @section('image', '/zdjecia/'.$modlitwa->zdjecie1)
+@endif
 @section('og_url', Request::url())
 @section('og_title', $modlitwa->title)
 @section('og_description', $modlitwa->description)

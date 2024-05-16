@@ -3,6 +3,9 @@
 @section('description', $wiadomosc->description)
 @section('keywords', $wiadomosc->keywords)
 {{-- social udostępnanie--}}
+@if(Str::length($wiadomosc->zdjecie1)>1)
+@section('image', '/zdjecia/'.$wiadomosc->zdjecie1)
+@endif
 @section('og_url', Request::url())
 @section('og_title', $wiadomosc->title)
 @section('og_description', $wiadomosc->description)
