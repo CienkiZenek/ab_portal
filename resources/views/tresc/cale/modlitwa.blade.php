@@ -32,6 +32,23 @@
     </div>
     {{--Koniec h1 na podstonie--}}
 
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class=" text-center col-lg-6  col-md-12">
+            @if(Str::length($wiadomosc->zdjecie1)>1)
+                @include('dodatki.zdjecie1', ['zdjecie1'=>$modlitwa->zdjecie1, 'zdjecie1_podpis'=>$modlitwa->zdjecie1_podpis,'zdjecie1_id'=>$modlitwa->zdjecie1_id])
+            @endif
+        </div></div>
+    {{--<div class="text-center col-6">
+
+        @if(Str::length($modlitwa->zdjecie1)>5)
+            @include('dodatki.zdjecie1', ['zdjecie1'=>$modlitwa->zdjecie1, 'zdjecie1_podpis'=>$modlitwa->zdjecie1_podpis,'zdjecie1_id'=>$modlitwa->zdjecie1_id])
+        @endif
+
+    </div>--}}
+
+
+
     @if(Str::length($modlitwa->widok)>4)
 
         @php
@@ -105,14 +122,14 @@
         // dd($zasob->zdjecie1);
     @endphp
 
-    <div class="text-center col-6">
+  {{--  <div class="text-center col-6">
 
 
         @if(Str::length($modlitwa->zdjecie1)>5)
             @include('dodatki.zdjecie1', ['zdjecie1'=>$modlitwa->zdjecie1, 'zdjecie1_podpis'=>$modlitwa->zdjecie1_podpis,'zdjecie1_id'=>$modlitwa->zdjecie1_id])
         @endif
 
-    </div>
+    </div>--}}
 
     @if(Str::length($modlitwa->zrodlo_nazwa)>5)
     <div class="row mb-4 mt-4">
