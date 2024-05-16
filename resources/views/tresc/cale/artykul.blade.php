@@ -1,15 +1,14 @@
 @extends('szablon')
+{{-- social udostępnanie--}}
 @section('title', $artykul->title)
 @section('description', $artykul->description)
 @section('keywords', $artykul->keywords)
-{{-- social udostępnanie--}}
-@if(Str::length($artykul->zdjecie1)>1)
-    @section('og:image', '/zdjecia/'.$artykul->zdjecie1)
-@endif
+{{-- Koniec social udostępnanie--}}
+@section('og:image', 'https://AndrzejBobola.info/zdjecia/'.$artykul->zdjecie1)
 @section('og_url', Request::url())
 @section('og_title', $artykul->title)
 @section('og_description', $artykul->description)
-{{-- Koniec social udostępnanie--}}
+
 @section('tresc')
 
 

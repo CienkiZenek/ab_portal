@@ -1,15 +1,14 @@
 @extends('szablon')
+{{-- social udostępnanie--}}
 @section('title', $wiadomosc->title)
 @section('description', $wiadomosc->description)
 @section('keywords', $wiadomosc->keywords)
-{{-- social udostępnanie--}}
-@if(Str::length($wiadomosc->zdjecie1)>1)
-@section('og:image', '/zdjecia/'.$wiadomosc->zdjecie1)
-@endif
+{{-- Koniec social udostępnanie--}}
+@section('og:image', 'https://AndrzejBobola.info/zdjecia/'.$wiadomosc->zdjecie1)
 @section('og_url', Request::url())
 @section('og_title', $wiadomosc->title)
 @section('og_description', $wiadomosc->description)
-{{-- Koniec social udostępnanie--}}
+
 @section('tresc')
 
 
