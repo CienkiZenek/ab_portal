@@ -4,7 +4,7 @@
 @section('description', $artykul->description)
 @section('keywords', $artykul->keywords)
 {{-- Koniec social udostępnanie--}}
-@section('og:image', 'https://AndrzejBobola.info/zdjecia/'.$artykul->zdjecie1)
+@section('og_image', 'https://AndrzejBobola.info/zdjecia/'.$artykul->zdjecie1)
 @section('og_url', Request::url())
 @section('og_title', $artykul->title)
 @section('og_description', $artykul->description)
@@ -48,9 +48,17 @@
         </div>
     </div>
     {{--Koniec h1 na podstonie--}}
-    @if(Str::length($artykul->zdjecie1)>1)
+    <div class="row">
+        <div class="col-lg-3"></div>
+        <div class=" text-center col-lg-6  col-md-12">
+            @if(Str::length($artykul->zdjecie1)>1)
+                @include('dodatki.zdjecie1', ['zdjecie1'=>$artykul->zdjecie1, 'zdjecie1_podpis'=>$artykul->zdjecie1_podpis,'zdjecie1_id'=>$artykul->zdjecie1_id])
+            @endif
+        </div></div>
+
+   {{-- @if(Str::length($artykul->zdjecie1)>1)
         @include('dodatki.zdjecie1', ['zdjecie1'=>$artykul->zdjecie1, 'zdjecie1_podpis'=>$artykul->zdjecie1_podpis,'zdjecie1_id'=>$artykul->zdjecie1_id])
-    @endif
+    @endif--}}
 
 
 <div class="row justify-content-center">

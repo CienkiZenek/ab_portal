@@ -4,7 +4,7 @@
 @section('description', $modlitwa->description)
 @section('keywords', $modlitwa->keywords)
 {{-- Koniec social udostępnanie--}}
-@section('og:image', 'https://AndrzejBobola.info/zdjecia/'.$modlitwa->zdjecie1)
+@section('og_image', 'https://AndrzejBobola.info/zdjecia/'.$modlitwa->zdjecie1)
 @section('og_url', Request::url())
 @section('og_title', $modlitwa->title)
 @section('og_description', $modlitwa->description)

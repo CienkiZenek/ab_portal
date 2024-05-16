@@ -4,7 +4,7 @@
 @section('description', $wiadomosc->description)
 @section('keywords', $wiadomosc->keywords)
 {{-- Koniec social udostępnanie--}}
-@section('og:image', 'https://AndrzejBobola.info/zdjecia/'.$wiadomosc->zdjecie1)
+@section('og_image', 'https://AndrzejBobola.info/zdjecia/'.$wiadomosc->zdjecie1)
 @section('og_url', Request::url())
 @section('og_title', $wiadomosc->title)
 @section('og_description', $wiadomosc->description)
