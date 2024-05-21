@@ -299,6 +299,7 @@ class GlownaServices
             }
 
         }
+        $wynik->sortBy('created_at');
         return $wynik;
 
 
