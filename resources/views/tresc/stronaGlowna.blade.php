@@ -39,9 +39,9 @@
         </ul>
             @endif
 
-<ul class="list-unstyled mb-1  ms-2">
+<ul class="list-unstyled mb-2  ms-2">
            @foreach($wiadomosciStart as $wiadomosc)
-        <li class="hover-shadow rounded-1"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
+        <li class="hover-shadow rounded-1 mb-2"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
                         class="text-decoration-none color-glowny">{{$wiadomosc->tytul}}</a>
         </li>
             @endforeach
