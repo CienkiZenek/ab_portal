@@ -20,7 +20,7 @@
     {{-- Koniec breadcrumb--}}
     {{-- h1 na podstonie--}}
 
-    <div class="row mt-5 mb-5">
+    <div class="row mt-5 mb-3">
         <div class="col-12 text-center">
             <h1 class="h1_podstrony fs-5 color-glowny">Intencje i świadectwa:</h1>
 
@@ -29,6 +29,7 @@
     <hr class="hr" />
     {{--Koniec h1 na podstonie--}}
 
+    <div class="col-12 text-center mb-4 ">Módly się za przyczyną św. Andrzeja Boboli w poleconych intencjach:</div>
 <div class="row">
 
 

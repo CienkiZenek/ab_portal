@@ -19,6 +19,8 @@
 
             @endif
         </div>
+
+
         <div class="col-lg-6 col-md-12 col-sm-12 border border-1 rounded-1 ps-0 pe-0 shadow-5">
 <div class="tlo-glowne0 border border-1  rounded-1">
             <a href="{{route('wiadomosci')}}" class="text-decoration-none color-glowny ms-2 "

@@ -9,7 +9,7 @@ use App\Models\Zasoby;
 class ZasobyController extends Controller
 {
     public function zasoby(){
-$zasoby=Zasoby::orderBy('created_at', 'desc')->paginate(20);
+$zasoby=Zasoby::orderBy('created_at', 'desc')->paginate(30);
         return view('tresc.podstrony.zasoby', ['zasoby'=>$zasoby] );
 
     }

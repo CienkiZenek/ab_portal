@@ -64,7 +64,15 @@
         {{-- początek treści aktualnosci--}}
 
                 <p class="akapit">
-            {!!  App\Services\GlownaServices::formatowanie($wiadomosc->tresc)!!}</p>
+            {!!  App\Services\GlownaServices::formatowanie($wiadomosc->tresc)!!}
+        @if(Str::length($wiadomosc->link_tresc)>1)
+
+
+                <a href="{{$wiadomosc->link_url}}" target="_blank">{{$wiadomosc->link_tresc}}</a>
+
+
+            @endif
+                </p>
 
         @if(Str::length($wiadomosc->ramka1)>5)
 
@@ -122,13 +130,13 @@
                 </div>
 
         @endif
-        @if(Str::length($wiadomosc->link_tresc)>1)
+       {{-- @if(Str::length($wiadomosc->link_tresc)>1)
 
                 <div class=" mb-1">
                     <a href="{{$wiadomosc->link_url}}" target="_blank">{{$wiadomosc->link_tresc}}</a>
                 </div>
 
-        @endif
+        @endif--}}
 
         {{-- koniec treści aktualnosci--}}
     </div>

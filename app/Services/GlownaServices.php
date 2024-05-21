@@ -273,7 +273,7 @@ class GlownaServices
                 case 'App\Models\Wiadomosci':
                     $item->tytulPowiazania = $item->tytul;
                     $item->typTresci = 'Aktualności';
-                    $item->nazwaRoute = 'aktualności';
+                    $item->nazwaRoute = 'aktualnosci';
                     break;
                 case 'App\Models\Artykuly':
                     $item->tytulPowiazania = $item->tytul;

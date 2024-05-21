@@ -29,12 +29,12 @@ class GlownyController extends Controller
 
 
       /*  $ksiegarnieStart=Ksiegarnie::orderBy('created_at', 'desc')->limit(3)->get();*/
-        $wiadomosciStart=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','nie')->where('data', '<=', Today())->limit(5)->get();
+        $wiadomosciStart=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','nie')->where('data', '<=', Today())->limit(15)->get();
         $wiadomosciPrzyklejone=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','tak')->where('data', '<=', Today())->get();
-        $artykulyStart=Artykuly::orderBy('created_at', 'asc')->where('status','Opublikowany')->limit(10)->get();
-        $filmyStart=Filmy::orderBy('created_at', 'asc')->limit(10)->get();
-        $modlitwyStart=Modlitwy::orderBy('created_at', 'asc')->limit(10)->get();
-        $zasobyStart=Zasoby::orderBy('created_at', 'asc')->limit(10)->get();
+        $artykulyStart=Artykuly::orderBy('created_at', 'desc')->where('status','Opublikowany')->limit(12)->get();
+        $filmyStart=Filmy::orderBy('created_at', 'desc')->limit(12)->get();
+        $modlitwyStart=Modlitwy::orderBy('created_at', 'desc')->limit(12)->get();
+        $zasobyStart=Zasoby::orderBy('created_at', 'desc')->limit(12)->get();
 
 
         // wybieranie losowego "Czy wiesz że...":

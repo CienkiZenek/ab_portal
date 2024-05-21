@@ -30,7 +30,7 @@ class IntencjeController extends Controller
     }
     public function index(){
 
-        $Wyniki=Intencje::where('Status', 'Opublikowana')->orderBy('created_at', 'desc')->paginate(20);
+        $Wyniki=Intencje::where('Status', 'Opublikowana')->orderBy('created_at', 'desc')->paginate(50);
 //dd($Wyniki);
         return view('tresc.podstrony.intencjeLista',['Wyniki'=>$Wyniki] );
     }

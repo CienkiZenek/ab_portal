@@ -33,7 +33,42 @@
 
 
 @foreach($Wyniki as $wiadomosc)
-    <div class="row mb-3 ">
+    <div class="row mb-7" >
+
+        <div class="col-lg-8 col-md-7 col-sm-12 mb-3">
+
+    <div class="color-glowny mb-2"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
+            class="text-decoration-none">{{$wiadomosc->tytul}}</a></div>
+
+    <div class="text-muted" style="text-align: justify">
+        <a href="{{route('wiadomosc',$wiadomosc->slug)}}"
+        class="text-decoration-none  color-czarny" >
+        {!!$wiadomosc->naglowek!!}</a></div>
+
+    </div>
+        <div class="col-lg-2 col-md-5 col-sm-12 ">
+            @if(Str::length($wiadomosc->zdjecie1)>4)
+                <div class="lightbox" data-mdb-lightbox-init>
+
+                <img style="max-height: 190px"
+                    data-mdb-lazy-load-init
+                    data-mdb-lazy-src="{{URL::asset('zdjecia/'.$wiadomosc->zdjecie1)}}"
+                    data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
+                    data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($wiadomosc->zdjecie1))}}
+                    class="figure-img img-fluid rounded shadow-3 mb-3"
+                    alt="{{$wiadomosc->zdjecie1_podpis}}"/>
+
+                </div>
+
+            @endif
+        </div>
+
+
+    </div>
+  {{--  <hr class="hr hr-blurry" />
+
+    <div class="row mb-7" >
+
         <div class="col-lg-8 col-md-7 col-sm-6 shadow-5 rounded-5">
 
     <div class="color-glowny mb-2"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
@@ -46,19 +81,32 @@
 
     </div>
         <div class="col-lg-2 col-md-5 col-sm-6 ">
+            @if(Str::length($wiadomosc->zdjecie1)>4)
+                <div class="lightbox" data-mdb-lightbox-init>
 
-            <figure class="figure">
-                <img
-                    src="{{URL::asset('zdjecia/'.$wiadomosc->zdjecie1)}}"
+                <img style="max-height: 190px"
+                    data-mdb-lazy-load-init
+                    data-mdb-lazy-src="{{URL::asset('zdjecia/'.$wiadomosc->zdjecie1)}}"
+                    data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
+                    data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($wiadomosc->zdjecie1))}}
                     class="figure-img img-fluid rounded shadow-3 mb-3"
-                    alt="{{$wiadomosc->zdjecie1_podpis}}"
-                />
-            </figure>
-            {{--<img src="{{URL::asset('zdjecia/'.$wiadomosc->zdjecie1)}}" class="img-fluid" alt="">--}}
+                    alt="{{$wiadomosc->zdjecie1_podpis}}"/>
+
+                </div>
+
+            @endif
         </div>
+
+
     </div>
-    <hr class="hr hr-blurry" />
+
+
+
+  --}}
+
 @endforeach
+
+
 @include('dodatki.paginacja')
     <div class="mb-14"></div>
     <div class="mb-14"></div>

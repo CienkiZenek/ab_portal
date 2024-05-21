@@ -8,7 +8,7 @@ use App\Models\Wiadomosci;
 class WiadomosciController extends Controller
 {
     public function wiadomosci(){
-        $wiadomosci=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('data', '<=', Today())->paginate(20);
+        $wiadomosci=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('data', '<=', Today())->paginate(30);
         return view('tresc.podstrony.wiadomosci', ['Wyniki'=>$wiadomosci]);
 
     }
