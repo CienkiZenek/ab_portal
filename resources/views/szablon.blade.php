@@ -294,7 +294,9 @@
                     <div class="mt-3">
                         <a href="https://twitter.com/@BobolaInfo" target="_blank"><i class="fa-brands fa-x-twitter fa-lg text-white"></i></a>
                         <a href="https://www.facebook.com/AndrzejaBobolaInfo/" target="_blank" class="ms-2"><i class="fab fa-facebook fa-lg text-white"></i></a>
+                        <a href="https://www.instagram.com/andrzejbobolainfo/"  target="_blank" class="ms-2" ><i class="fab fa-instagram fa-lg text-white"></i></a>
                         <a href="https://www.youtube.com/@AndrzejBobolaInfo"  target="_blank" class="ms-2" ><i class="fa-brands fa-youtube fa-lg text-white"></i></a>
+                        <a href="https://www.tiktok.com/@andrzejbobolainfo"  target="_blank" class="ms-2" ><i class="fab fa-tiktok fa-lg text-white"></i></a>
                        </div>
 
                 </div>
