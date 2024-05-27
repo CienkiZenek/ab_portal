@@ -64,10 +64,7 @@
                         <p class="mb-2"><small class="text-muted ">Stron: 248</small></p>
                         <p class="mb-2"><small class="text-muted ">Data wydania: 2022-11-15</small></p>
 
-   <p class="text-center mt-4">
-                            <a href="https://www.esprit.com.pl/894/Bozy-wojownik.html" target="_blank" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="fas fa-book-open"></i> O książce na stronie wydawnictwa</a>
 
-                        </p>
 
                         <p class="text-center mt-4">
                             <a href="{{route('fragmentKsiazki')}}" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="fas fa-book"></i> Fragment książki</a>
@@ -76,7 +73,10 @@
                         <p class="text-center mt-4">
                             <a href="{{route('publikacjeKsiazka')}}" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="far fa-keyboard"></i> Publikacje o książce</a>
                         </p>
+                        <p class="text-center mt-4">
+                            <a href="https://www.esprit.com.pl/894/Bozy-wojownik.html" target="_blank" class="btn btn-primary mb-3" data-mdb-ripple-init><i class="fas fa-book-open"></i> O książce na stronie wydawnictwa</a>
 
+                        </p>
                         {{--<p class="text-center mt-4">
                         <a href="{{route('gdzieKupic')}}" class="btn btn-primary" data-mdb-ripple-init><i class="fas fa-cart-arrow-down"></i> Księgarnie internetowe gdzie można kupić książkę</a>
                         </p>--}}

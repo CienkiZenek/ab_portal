@@ -35,23 +35,41 @@
     @foreach($Wyniki as $artykul)
 
         <div class="row mb-3"><div class="vr"></div>
-            <div class="col-lg-8 col-md-7 col-sm-6">
+            <div class="col-lg-8 col-md-7 col-sm-12 mb-3">
 
                 <div class="color-glowny mb-2"><a href="{{route('artykul',$artykul->slug)}}"
-                                                     class="text-decoration-none">{{$artykul->tytul}}</a></div>
+                                                     class="text-decoration-none">{{$artykul->tytul}}
+                    </a></div>
 
-                <div class="text-muted color-czarny" style="font-size: small"><a href="{{route('artykul',$artykul->slug)}}"
+                <div class="text-muted color-czarny" style="text-align: justify">
+                    <a href="{{route('artykul',$artykul->slug)}}"
                                                                      class="text-decoration-none color-czarny">{!!$artykul->naglowek!!}</a></div>
             </div>
-            <div class="col-lg-2 col-md-5 col-sm-6 ">
+            <div class="col-lg-2 col-md-5 col-sm-12 ">
 
-                <figure class="figure">
+                {{--<figure class="figure">
                     <img
                         src="{{URL::asset('zdjecia/'.$artykul->zdjecie1)}}"
                         class="figure-img img-fluid rounded shadow-3 mb-3"
                         alt="{{$artykul->zdjecie1_podpis}}"
                     />
-                </figure>
+                </figure>--}}
+
+                <div class="lightbox" data-mdb-lightbox-init>
+
+                    <img style="max-height: 190px"
+                         data-mdb-lazy-load-init
+                         data-mdb-lazy-src="{{URL::asset('zdjecia/'.$artykul->zdjecie1)}}"
+                         data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
+                         data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($artykul->zdjecie1))}}
+                    class="figure-img img-fluid rounded shadow-3 mb-3"
+                    alt="{{$artykul->zdjecie1_podpis}}"/>
+
+                </div>
+
+
+
+
 
             </div>
         </div>
