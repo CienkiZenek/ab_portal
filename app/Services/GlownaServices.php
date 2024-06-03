@@ -181,10 +181,26 @@ class GlownaServices
 
         foreach ($watkiPowiazane as $zWiadomosciami) {
             foreach ($zWiadomosciami->wiadomosc as $wiadom) {
+if($wiadom->status=='Opublikowana' && $wiadom->data<=Today())
                 $kolekcjaPowiazanych1->push($wiadom);
+            }
+
+        }
+
+        foreach ($watkiPowiazane as $zArtykulami) {
+            foreach ($zArtykulami->artykul as $artykul) {
+
+                if($artykul->status=='Opublikowany'){
+                    $kolekcjaPowiazanych5->push($artykul);
+                }
             }
         }
 
+        foreach ($watkiPowiazane as $zZasobami) {
+            foreach ($zZasobami->zasob as $zasob) {
+                $kolekcjaPowiazanych4->push($zasob);
+            }
+        }
 
         foreach ($watkiPowiazane as $zFilmami) {
             foreach ($zFilmami->film as $film) {
@@ -199,17 +215,9 @@ class GlownaServices
             }
         }
 
-        foreach ($watkiPowiazane as $zZasobami) {
-            foreach ($zZasobami->zasob as $zasob) {
-                $kolekcjaPowiazanych4->push($zasob);
-            }
-        }
 
-        foreach ($watkiPowiazane as $zArtykulami) {
-            foreach ($zArtykulami->artykul as $artykul) {
-                $kolekcjaPowiazanych5->push($artykul);
-            }
-        }
+
+
 
 
 // usuwanie duplikatów
@@ -264,7 +272,7 @@ class GlownaServices
         }
 
 
-        $wynik = $kolekcja1->concat($kolekcja2)->concat($kolekcja3)->concat($kolekcja4)->concat($kolekcja5);
+        $wynik = $kolekcja1->concat($kolekcja5)->concat($kolekcja4)->concat($kolekcja2)->concat($kolekcja3);
 
 
         $wynik->sortBy('created_at');
@@ -299,7 +307,7 @@ class GlownaServices
             }
 
         }
-        $wynik->sortBy('created_at',);
+        $wynik->sortBy('created_at');
         return $wynik;
 
 

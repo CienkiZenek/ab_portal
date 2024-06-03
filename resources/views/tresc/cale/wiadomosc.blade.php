@@ -44,15 +44,15 @@
         <div class="col-lg-2 "></div>
     </div>
             {{-- koniec naglowek--}}
-
+    @if(Str::length($wiadomosc->zdjecie1)>3)
     <div class="row">
         <div class="col-lg-3"></div>
         <div class=" text-center col-lg-6  col-md-12">
-            @if(Str::length($wiadomosc->zdjecie1)>1)
-                @include('dodatki.zdjecie1', ['zdjecie1'=>$wiadomosc->zdjecie1, 'zdjecie1_podpis'=>$wiadomosc->zdjecie1_podpis,'zdjecie1_id'=>$wiadomosc->zdjecie1_id])
-            @endif
-        </div></div>
 
+                @include('dodatki.zdjecie1', ['zdjecie1'=>$wiadomosc->zdjecie1, 'zdjecie1_podpis'=>$wiadomosc->zdjecie1_podpis,'zdjecie1_id'=>$wiadomosc->zdjecie1_id])
+
+        </div></div>
+    @endif
 
 
 
@@ -76,17 +76,36 @@
 
         @if(Str::length($wiadomosc->ramka1)>5)
 
-                <div class="mb-3 note note-warning">{!!$wiadomosc->ramka1!!}</div>
+                <div class="mb-3 note note-warning">
+                    <p class="akapit">
+                        {!!  App\Services\GlownaServices::formatowanie($wiadomosc->ramka1)!!}
+
+                    </p>
+                </div>
 
         @endif
 
-        @if(Str::length($wiadomosc->zdjecie2)>1)
-                                @include('dodatki.zdjecie2', ['zdjecie2'=>$wiadomosc->zdjecie2, 'zdjecie2_podpis'=>$wiadomosc->zdjecie2_podpis,'zdjecie2_id'=>$wiadomosc->zdjecie2_id])
 
+        @if(Str::length($wiadomosc->zdjecie2)>3)
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class=" text-center col-lg-6  col-md-12">
+
+                        @include('dodatki.zdjecie2', ['zdjecie2'=>$wiadomosc->zdjecie2, 'zdjecie2_podpis'=>$wiadomosc->zdjecie2_podpis,'zdjecie2_id'=>$wiadomosc->zdjecie2_id])
+
+                </div></div>
         @endif
+
+
+
 
         @if(Str::length($wiadomosc->ramka2)>5)
-                <div class=" mb-3  note note-info">{!!$wiadomosc->ramka2!!}</div>
+                <div class=" mb-3  note note-info">
+
+                    <p class="akapit">
+                        {!!  App\Services\GlownaServices::formatowanie($wiadomosc->ramka2)!!}
+                    </p>
+                </div>
 
         @endif
 

@@ -7,6 +7,7 @@
     <div class="col-lg-3 col-md-4 col-sm-6" >
 
       <img
+          style="max-height: 600px"
           data-mdb-lazy-load-init
           data-mdb-lazy-src="{{URL::asset('zdjecia/'.$zdjecie->plik)}}"
          {{-- src="{{URL::asset('zdjecia/'.$zdjecie->plik)}}"--}}
