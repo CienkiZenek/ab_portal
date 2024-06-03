@@ -1,7 +1,7 @@
 <figure class="figure" >
-    <div class="lightbox" data-mdb-lightbox-init>
+    <div class="lightbox" data-mdb-lightbox-init style="max-height: 600px">
         <img
-            style="max-height: 650px"
+            style="max-height: 600px"
             data-mdb-lazy-load-init
 
             data-mdb-lazy-src="{{URL::asset('zdjecia/'.$zdjecie2)}}"

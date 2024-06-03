@@ -4,7 +4,7 @@
     <div class="row">
 @foreach($galeria as $zdjecie)
 
-    <div class="col-lg-3 col-md-4 col-sm-6" >
+    <div class="col-lg-3 col-md-4 col-sm-6" style="max-height: 600px">
 
       <img
           style="max-height: 600px"
