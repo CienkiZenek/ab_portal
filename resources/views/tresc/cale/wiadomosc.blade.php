@@ -45,7 +45,7 @@
     </div>
             {{-- koniec naglowek--}}
     @if(Str::length($wiadomosc->zdjecie1)>3)
-    <div class="row" style="max-height: 600px">
+    <div class="row">
         <div class="col-lg-3"></div>
         <div class=" text-center col-lg-6  col-md-12">
 
@@ -87,7 +87,7 @@
 
 
         @if(Str::length($wiadomosc->zdjecie2)>3)
-            <div class="row" style="max-height: 600px">
+            <div class="row">
                 <div class="col-lg-3"></div>
                 <div class=" text-center col-lg-6  col-md-12">
 
