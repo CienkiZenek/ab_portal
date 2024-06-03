@@ -33,7 +33,7 @@
 
 
 @foreach($Wyniki as $wiadomosc)
-    <div class="row mb-7" >
+    <div class="row mb-7" style="max-height: 210px">
 
         <div class="col-lg-8 col-md-7 col-sm-12 mb-3">
 

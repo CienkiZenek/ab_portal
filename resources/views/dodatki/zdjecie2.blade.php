@@ -1,5 +1,5 @@
 <figure class="figure" >
-    <div class="lightbox" data-mdb-lightbox-init style="max-height: 600px">
+    <div class="lightbox" style="max-height: 600px" data-mdb-lightbox-init >
         <img
             style="max-height: 600px"
             data-mdb-lazy-load-init
