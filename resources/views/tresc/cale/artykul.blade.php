@@ -25,9 +25,9 @@
     {{-- h1 na podstonie--}}
 
     @if(Str::length($artykul->motto)>5)
-    <div class="row ">
+    <div class="row mt-5 ">
         <div class="col-lg-2 col-md-0"></div>
-        <div class="col-9 text-muted shadow-3 bg-light" style="text-align: justify;">{!!$artykul->motto!!}
+        <div class="col-9 text-muted shadow-3 bg-light py-2" style="text-align: justify;">{!!$artykul->motto!!}
             <div class="row">
                 <div class="col-12 text-muted d-flex justify-content-end">{!!$artykul->motto_podpis!!}</div>
             </div>
@@ -111,6 +111,16 @@
                 </div>
         @endif
 
+        @if(Str::length($artykul->zdjecie2)>3)
+            <div class="row" >
+                <div class="col-lg-3"></div>
+                <div class=" text-center col-lg-6  col-md-12">
+
+                    @include('dodatki.zdjecie2', ['zdjecie2'=>$artykul->zdjecie2, 'zdjecie2_podpis'=>$artykul->zdjecie2_podpis,'zdjecie2_id'=>$artykul->zdjecie2_id])
+                </div></div>
+        @endif
+
+
         <div class=" mb-3 d-flex justify-content-end">{{$artykul->autor}}</div>
         <div class="mb-3 text-muted d-flex justify-content-end" style="font-size: small">Opublikowano: {{Carbon\Carbon::parse($artykul->data)->format('d-m-Y')}}</div>
 
@@ -125,14 +135,7 @@
 
 
 
-    @if(Str::length($artykul->zdjecie2)>3)
-                <div class="row" >
-                        <div class="col-lg-3"></div>
-                        <div class=" text-center col-lg-6  col-md-12">
 
-                            @include('dodatki.zdjecie2', ['zdjecie2'=>$artykul->zdjecie2, 'zdjecie2_podpis'=>$artykul->zdjecie2_podpis,'zdjecie2_id'=>$artykul->zdjecie2_id])
-                        </div></div>
-    @endif
 
 
     @if($artykul->pliki->count()>0)

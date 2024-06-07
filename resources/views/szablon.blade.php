@@ -238,6 +238,7 @@
     <div class="mb-3"></div>
     @yield('tresc')
 
+    <div class="mb-5"></div>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561469657068826"
             crossorigin="anonymous"></script>
@@ -252,15 +253,7 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
-  {{--  <div class="row border border-1 p-2 bg-light rounded-1">
-        <div class="col-lg-12 col-md-12 col-sm-12 fs-6">
-            --}}{{--reklama googla--}}{{--
-            Reklama googla
-            --}}{{--koniec reklamy googla--}}{{--
-        </div>
-
-
-    </div>
+  {{--  <div class="mb-3"></div>
     <div class="row border border-1 p-2 bg-light rounded-1 mt-4 mb-7">
         <div class="col-lg-12 col-md-12 col-sm-12 fs-6">
             --}}{{--wsparcie--}}{{--
@@ -269,7 +262,9 @@
         </div>
 
 
-    </div>--}}
+    </div>
+    <div class="mb-3"></div>
+    --}}
 
 
     <button onclick="topFunction()" id="myBtn" title="Do góry" data-mdb-ripple-init data-mdb-ripple-color="white">&nbsp;<i class="fas fa-arrow-up-long fa-2x"></i>&nbsp;{{--Do góry--}}</button>

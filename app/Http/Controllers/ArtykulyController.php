@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class ArtykulyController extends Controller
 {
     public function artykuly(){
-        $artykuly=Artykuly::orderBy('created_at', 'desc')->where('status','Opublikowany')->paginate(20);
+        $artykuly=Artykuly::orderBy('created_at', 'desc')->where('status','Opublikowany')->where('data', '<=', Today())->paginate(20);
         return view('tresc.podstrony.artykuly', ['Wyniki'=>$artykuly]);
 
     }
