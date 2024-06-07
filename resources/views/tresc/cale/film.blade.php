@@ -3,6 +3,10 @@
 @section('description', $film->description)
 @section('keywords', $film->keywords)
 {{-- social udostępnanie--}}
+@if($film->id=1)
+    @section('og_image', 'https://AndrzejBobola.info/stat/klatki_filmy/powrot-relikwii-youtoube-klatka.png')
+@endif
+
 @section('og_url', Request::url())
 @section('og_title', $film->title)
 @section('og_description', $film->description)
