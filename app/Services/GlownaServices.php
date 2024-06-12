@@ -190,7 +190,7 @@ if($wiadom->status=='Opublikowana' && $wiadom->data<=Today())
         foreach ($watkiPowiazane as $zArtykulami) {
             foreach ($zArtykulami->artykul as $artykul) {
 
-                if($artykul->status=='Opublikowany'){
+                if($artykul->status=='Opublikowany'&& $artykul->data<=Today()){
                     $kolekcjaPowiazanych5->push($artykul);
                 }
             }

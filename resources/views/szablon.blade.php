@@ -5,19 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="@yield('description', 'Portal poświęcony św. Andrzejowi Boboli')">
+    <meta name="description" content="@yield('description', 'Św. Andrzej Bobola - życie, męka, kult, modlitwy, przesłanie, intencje')">
     <meta name="keywords" content="@yield('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych, relikwie')">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3561469657068826"
             crossorigin="anonymous"></script>
 
-    <title>@yield('title', 'AndrzejBobola.info')</title>
+    <title>@yield('title', 'Portal poświęcony św. Andrzejowi Boboli - AndrzejBobola.info')</title>
     <link rel="icon" type="image/png" sizes="48x48"   href="{{ URL::asset('/stat/favicon.webp')}}">
 
 
     <meta property="og:url"           content="@yield('og_url', 'https://AndrzejBobola.info')" />
     <meta property="og:type"           content="@yield('og_type', 'website')" />
-    <meta property="og:title"         content="@yield('og_title', 'AndrzejBobola.info')" />
-    <meta property="og:description"   content="@yield('og_description', 'Portal poświęcony św. Andrzejowi Boboli')" />
+    <meta property="og:title"         content="@yield('og_title', 'Portal poświęcony św. Andrzejowi Boboli')" />
+    <meta property="og:description"   content="@yield('og_description', 'Św. Andrzej Bobola - życie, męka, kult, modlitwy, przesłanie, intencje')" />
     <meta property="og:image"         content="@yield('og_image', 'https://AndrzejBobola.info/stat/andrzej-bobola.webp')" />
 
     <meta property="og:locale" content="pl_PL" />
@@ -69,7 +69,7 @@
                  width="95" height="100"
                  title="logoAndrzejBobolaInfo"
                  alt="sw-Andrzej-Bobola-logo-portalu-AndrzejBobola.info"
-                 loading="lazy">
+                 >
         </a>
         <!-- Toggle button -->
         <button

@@ -8,6 +8,7 @@
            {{-- src="{{URL::asset('zdjecia/'.$zdjecie2)}}"--}}
             data-mdb-lazy-placeholder="{{URL::asset('stat/lazy_load.webp')}}"
             class="figure-img img-fluid rounded shadow-3 mb-3"
+            data-mdb-caption="{{$zdjecie2_podpis}}"
             alt="{{$zdjecie2_podpis}}"
             data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($zdjecie2))}}
         /></div>

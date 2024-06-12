@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://andrzejbobola.info</loc>
         <lastmod>2024-05-16</lastmod>
@@ -24,6 +24,48 @@
         <changefreq>yearly</changefreq>
         <priority>1.0</priority>
     </url>
+
+    <url>
+        <loc>https://andrzejbobola.info/artykul/relikwie-sw-andrzeja-boboli-w-warszawie-20-czerwca-1938</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/artykul/relikwie-sw-andrzeja-boboli-w-warszawie-17-19-czerwca-1938</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/artykul/elikwie-sw-andrzeja-boboli-w-poznaniu-13-17-czerwca-1938-galeria</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/artykul/relikwie-sw-andrzeja-boboli-w-krakowie-11-13-czerwca-1938</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/artykul/relikwie-sw-andrzeja-boboli-w-oswiecimiu-11-czerwca-1938</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://andrzejbobola.info/artykul/powitanie-relikwii-sw-andrzeja-boboli-na-polskiej-ziemi-11-czerwca-1938-opis-i-galeria</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/artykul/pozegnanie-relikwii-sw-andrzeja-boboli-przez-rzym-8-czerwca-1938-opis-galeria</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/artykul/polska-pielgrzymka-prosi-papieza-o-relikwie-sw-andrzeja-boboli-7-czerwca-1938</loc>
+        <lastmod>2024-06-12T12:40:46+01:00</lastmod>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://andrzejbobola.info/biografia</loc>
         <lastmod>2024-05-16</lastmod>
@@ -41,6 +83,12 @@
         <lastmod>2024-05-16</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://andrzejbobola.info/film/powrot-relikwii-sw-andrzeja-boboli-do-polski-1938</loc>
+        <lastmod>2024-06-12</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://andrzejbobola.info/relikwieDlaKosciola</loc>
