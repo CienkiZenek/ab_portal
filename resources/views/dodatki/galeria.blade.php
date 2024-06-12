@@ -19,7 +19,7 @@
            alt="{{$zdjecie->opis}}}}"
            data-mdb-img={{URL::asset('zdjecia/'.App\Services\GlownaServices::zdjecieDuze($zdjecie->plik))}}
       />
-<p class="text-muted lh-sm" style="font-size: xx-small">{{$zdjecie->opis}}. {{$zdjecie->autor}}</p>
+<p class="text-muted lh-sm" style="font-size: x-small">{{$zdjecie->opis}}. {{$zdjecie->autor}}</p>
 
     </div>
     {{--<div class="">{{$zdjecie->opis}}. {{$zdjecie->autor}}</div>--}}
