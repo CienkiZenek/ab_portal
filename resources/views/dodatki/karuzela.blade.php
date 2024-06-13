@@ -6,13 +6,7 @@
     <!-- Indicators -->
     <div class="carousel-indicators">
 
-       {{-- <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
 
-        <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="1"
-                aria-label="Slide 2"></button>
-        <button type="button" data-mdb-target="#carousel" data-mdb-slide-to="2"
-                aria-label="Slide 3"></button>--}}
 
         @for ($i = 0; $i < $karuzelaZbior->count(); $i++)
             @if($karuzelaZbior[$i]->numerDodany==0)
@@ -41,7 +35,7 @@
                         <div class="carousel-item">
          @endif
 
-            <img src="zdjecia/{{$item->zdjecie2}}" class="d-block w-100"
+            <img src="karuzela/{{$item->zdjecie_karuzela}}" class="d-block w-100"
                  alt="" />
             <div class="carousel-caption">
                 <a href="/{{$item->nazwaRoute}}/{{$item->slug}}" class="text-white ">

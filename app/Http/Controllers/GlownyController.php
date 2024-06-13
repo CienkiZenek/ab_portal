@@ -27,7 +27,7 @@ class GlownyController extends Controller
 
         $karuzelaZbior=GlownaServices::karuzelaZbior();
 
-
+//dd($karuzelaZbior);
       /*  $ksiegarnieStart=Ksiegarnie::orderBy('created_at', 'desc')->limit(3)->get();*/
         $wiadomosciStart=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','nie')->where('data', '<=', Today())->limit(15)->get();
         $wiadomosciPrzyklejone=Wiadomosci::orderBy('data', 'desc')->orderBy('created_at', 'desc')->where('status','Opublikowana')->where('przyklejona','tak')->where('data', '<=', Today())->get();

@@ -389,7 +389,7 @@ if($wiadom->status=='Opublikowana' && $wiadom->data<=Today())
 
         $wiadomosciKaruzela = Wiadomosci::where('strona_glowna', 'tak')->where('status','Opublikowana')->where('data', '<=', Today())->orderBy('updated_at', 'asc')->get();
         $zasobyKaruzela = Zasoby::where('strona_glowna', 'tak')->orderBy('updated_at', 'asc')->get();
-        $artykulyKaruzela = Artykuly::where('strona_glowna', 'tak')->where('status','Opublikowany')->orderBy('updated_at', 'asc')->get();
+        $artykulyKaruzela = Artykuly::where('strona_glowna', 'tak')->where('status','Opublikowany')->where('data', '<=', Today())->orderBy('updated_at', 'asc')->get();
         $modlitwyKaruzela = Modlitwy::where('strona_glowna', 'tak')->orderBy('updated_at', 'asc')->get();
 
         $karuzela = $wiadomosciKaruzela->concat($zasobyKaruzela)->concat($artykulyKaruzela)->concat($modlitwyKaruzela);
