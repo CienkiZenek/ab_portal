@@ -5,9 +5,9 @@
 @section('tresc')
 
 
-    <div class="row text-center  mt-2 mb-3   ">
-        <div class="col-12">
-
+    <div class="row mb-4">
+        <div class="col-12 color-glowny" style="font-size: small">
+            Św. Andrzej Bobola - życie, męka, kult, modlitwy, przesłanie, intencje
         </div>
     </div>
     @include('dodatki.dlaczegoAB')

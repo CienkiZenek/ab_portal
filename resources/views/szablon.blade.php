@@ -217,12 +217,6 @@
             </div>
         </div>
 
-        {{--<div class="col-md-12 d-none d-sm-block d-md-none color-glowny">AA
-            {!!App\Services\GlownaServices::datownik()!!}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;@include('komponenty.socialPrzyciskiNiebieskie')
-
-        </div>--}}
-
     </div>
 
 
@@ -235,7 +229,7 @@
     {{-- Komunikaty - Start--}}
    @include('dodatki.komunikaty')
     {{-- Komunikaty - Koniec --}}
-    <div class="mb-3"></div>
+    {{--<div class="mb-3"></div>--}}
     @yield('tresc')
 
     <div class="mb-5"></div>
