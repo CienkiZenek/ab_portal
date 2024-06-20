@@ -9,7 +9,7 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
             <li class="breadcrumb-item active" aria-current="page">Wyszukiwarka</li>
         </ol>
     </nav>
@@ -36,7 +36,7 @@
 
 
                 <div class="color-glowny fw-bold"><a href="/{{$wynik->nazwaRoute}}/{{$wynik->slug}}" style="font-size: small"
-                        class="text-decoration-none" target="_blank">{{$wynik->tytulDodany}}  ({{$wynik->typTresci}})</a></div>
+                        class="text-decoration-none" target="_blank" rel="canonical">{{$wynik->tytulDodany}}  ({{$wynik->typTresci}})</a></div>
                 <div  class="text-muted" style="font-size: x-small" >{!!$wynik->naglowekDodany!!}</div>
 
             {{--<div class="color-glowny fw-bold"><a href="{{route('wiadomosc',$wiadomosc->slug)}}" style="font-size: small"

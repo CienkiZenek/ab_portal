@@ -13,7 +13,7 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">Filmy</li>
         </ol>
@@ -38,7 +38,7 @@
             <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12">
 
                 <div class="color-glowny mb-3 fs-5"><a href="{{route('film',$film->slug)}}"
-                                                     class="text-decoration-none">{{$film->tytul}}</a></div>
+                                                     class="text-decoration-none" rel="canonical">{{$film->tytul}}</a></div>
 
                 <div class="ratio ratio-16x9">
                 <iframe

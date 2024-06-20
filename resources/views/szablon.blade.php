@@ -64,7 +64,7 @@
            data-mdb-ripple-color="white"
            data-mdb-ripple-centered="true"
            data-mdb-ripple-radius="80"
-        >
+           rel="canonical">
             <img src="{{ URL::asset('/stat/logoAndrzejBobolaInfo.webp')}}"
                  width="95" height="100"
                  title="logoAndrzejBobolaInfo"
@@ -93,28 +93,28 @@
                 <li class="nav-item">
                     <a class="nav-link text-white " href="{{route('biografia')}}"
 
-                    >Życie&nbsp;i&nbsp;kult</a>
+                       rel="canonical">Życie&nbsp;i&nbsp;kult</a>
                 </li>
             </ul>
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{{route('wiadomosci')}}" >{{--<i class="fas fa-comment"></i>--}} Aktualności</a>
+                    <a class="nav-link text-white" href="{{route('wiadomosci')}}"  rel="canonical">{{--<i class="fas fa-comment"></i>--}} Aktualności</a>
                 </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{{route('IntencjeSwiadectwa')}}" >{{--<i class="fas fa-comment"></i>--}} Intencje&nbsp;i&nbsp;świdectwa</a>
+                    <a class="nav-link text-white" href="{{route('IntencjeSwiadectwa')}}"  rel="canonical">{{--<i class="fas fa-comment"></i>--}} Intencje&nbsp;i&nbsp;świdectwa</a>
                 </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{{route('modlitwy')}}" >{{--<i class="fas fa-hands-praying"></i>--}} Modlitwy</a>
+                    <a class="nav-link text-white" href="{{route('modlitwy')}}"  rel="canonical">{{--<i class="fas fa-hands-praying"></i>--}} Modlitwy</a>
                 </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="{{route('relikwie')}}" >{{--<i class="fas fa-hands-praying"></i>--}} Relikwie</a>
+                    <a class="nav-link text-white" href="{{route('relikwie')}}"  rel="canonical">{{--<i class="fas fa-hands-praying"></i>--}} Relikwie</a>
                 </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
@@ -126,26 +126,26 @@
                         id="tresc"
                         role="button"
                         aria-expanded="false"
-                    >
+                        rel="canonical">
                      Zasoby</a>
 
                     <ul class="dropdown-menu" aria-labelledby="tresc">
 
                         <li>
-                            <a class="dropdown-item" href="{{route('artykuly')}}">Artykuły</a>
+                            <a class="dropdown-item" href="{{route('artykuly')}}" rel="canonical">Artykuły</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{route('biogram')}}">Biogram</a>
+                            <a class="dropdown-item" href="{{route('biogram')}}" rel="canonical">Biogram</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{route('filmy')}}">Filmy</a>
+                            <a class="dropdown-item" href="{{route('filmy')}}" rel="canonical">Filmy</a>
                         </li>
 
                         <li>
-                            <a class="dropdown-item" href="{{route('zasoby')}}">Zdjęcia, dokumenty, książki</a>
+                            <a class="dropdown-item" href="{{route('zasoby')}}" rel="canonical">Zdjęcia, dokumenty, książki</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="{{route('naszaKsiazka')}}">Książka "Boży wojownik"</a>
+                            <a class="dropdown-item" href="{{route('naszaKsiazka')}}" rel="canonical">Książka "Boży wojownik"</a>
                         </li>
 
 
@@ -283,7 +283,7 @@
                     <div class="mt-3">
                         <a href="https://twitter.com/@BobolaInfo" target="_blank"><i class="fa-brands fa-x-twitter fa-lg text-white"></i></a>
                         <a href="https://www.facebook.com/AndrzejaBobolaInfo/" target="_blank" class="ms-2"><i class="fab fa-facebook fa-lg text-white"></i></a>
-                        <a href="https://www.instagram.com/andrzejbobolainfo/"  target="_blank" class="ms-2" ><i class="fab fa-instagram fa-lg text-white"></i></a>
+                        {{--<a href="https://www.instagram.com/andrzejbobolainfo/"  target="_blank" class="ms-2" ><i class="fab fa-instagram fa-lg text-white"></i></a>--}}
                         <a href="https://www.youtube.com/@AndrzejBobolaInfo"  target="_blank" class="ms-2" ><i class="fa-brands fa-youtube fa-lg text-white"></i></a>
                         <a href="https://www.tiktok.com/@andrzejbobolainfo"  target="_blank" class="ms-2" ><i class="fab fa-tiktok fa-lg text-white"></i></a>
                        </div>
@@ -292,7 +292,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 ">
 
                     <ul class="list-unstyled">
-                        <li><i class="fas fa-pen-to-square"></i> <a href="{{route('kontakt')}}" class="text-white">Formularz kontaktowy</a></li>
+                        <li><i class="fas fa-pen-to-square"></i> <a href="{{route('kontakt')}}" class="text-white" rel="canonical">Formularz kontaktowy</a></li>
                         <li><i class="far fa-envelope"></i>
 
                             <span >&#112;&#111;&#099;&#122;&#116;&#097;&#064;&#065;&#110;&#100;&#114;&#122;&#101;&#106;&#066;&#111;&#098;&#111;&#108;&#097;&#046;&#105;&#110;&#102;&#111;</span></li>
@@ -303,8 +303,8 @@
 
                     <ul class="list-unstyled">
 
-                        <li><i class="fas fa-sitemap fa-lg"></i>  <a href="{{route('mapaStrony')}}" class="text-white">Mapa strony</a></li>
-                        <li><i class="fas fa-book fa-lg"></i>  <a href="{{route('naszaKsiazka')}}" class="text-white">&nbsp;Książka "Boży wojownik"</a></li>
+                        <li><i class="fas fa-sitemap fa-lg"></i>  <a href="{{route('mapaStrony')}}" class="text-white" rel="canonical">Mapa strony</a></li>
+                        <li><i class="fas fa-book fa-lg"></i>  <a href="{{route('naszaKsiazka')}}" class="text-white" rel="canonical">&nbsp;Książka "Boży wojownik"</a></li>
 
                     </ul>
                 </div>

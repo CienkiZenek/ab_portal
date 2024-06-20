@@ -13,7 +13,7 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">Artykuły</li>
         </ol>
@@ -38,12 +38,12 @@
             <div class="col-lg-8 col-md-7 col-sm-12 mb-3">
 
                 <div class="color-glowny mb-2"><a href="{{route('artykul',$artykul->slug)}}"
-                                                     class="text-decoration-none">{{$artykul->tytul}}
+                                                     class="text-decoration-none" rel="canonical">{{$artykul->tytul}}
                     </a></div>
 
                 <div class="text-muted color-czarny" style="text-align: justify">
                     <a href="{{route('artykul',$artykul->slug)}}"
-                                                                     class="text-decoration-none color-czarny">{!!$artykul->naglowek!!}</a></div>
+                                                                     class="text-decoration-none color-czarny" rel="canonical">{!!$artykul->naglowek!!}</a></div>
             </div>
             <div class="col-lg-2 col-md-5 col-sm-12 ">
 
@@ -54,7 +54,7 @@
                         alt="{{$artykul->zdjecie1_podpis}}"
                     />
                 </figure>--}}
-
+                @if(Str::length($artykul->zdjecie1)>4)
                 <div class="lightbox" data-mdb-lightbox-init>
 
                     <img style="max-height: 190px"
@@ -66,7 +66,7 @@
                     alt="{{$artykul->zdjecie1_podpis}}"/>
 
                 </div>
-
+                @endif
 
 
 

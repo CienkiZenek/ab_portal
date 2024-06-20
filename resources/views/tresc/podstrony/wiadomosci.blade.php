@@ -13,7 +13,7 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">Aktualności</li>
         </ol>
@@ -38,11 +38,11 @@
         <div class="col-lg-8 col-md-7 col-sm-12 mb-3">
 
     <div class="color-glowny mb-2"><a href="{{route('wiadomosc',$wiadomosc->slug)}}"
-            class="text-decoration-none">{{$wiadomosc->tytul}}</a></div>
+            class="text-decoration-none" rel="canonical">{{$wiadomosc->tytul}}</a></div>
 
     <div class="text-muted" style="text-align: justify">
         <a href="{{route('wiadomosc',$wiadomosc->slug)}}"
-        class="text-decoration-none  color-czarny" >
+        class="text-decoration-none  color-czarny"  rel="canonical">
         {!!$wiadomosc->naglowek!!}</a></div>
 
     </div>

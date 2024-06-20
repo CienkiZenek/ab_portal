@@ -13,7 +13,7 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">Modlitwy</li>
         </ol>
@@ -35,7 +35,7 @@
     <div class="row mb-4">
         <div class="col-1"></div>
     <div class="col-11"><a href="{{route('modlitwa',$modlitwa->slug)}}" style="font-size:"
-            class="text-decoration-none color-glowny8">{{$modlitwa->nazwa}}</a></div>
+            class="text-decoration-none color-glowny8" rel="canonical">{{$modlitwa->nazwa}}</a></div>
     </div>
 
 @endforeach
