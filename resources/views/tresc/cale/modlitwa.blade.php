@@ -15,8 +15,8 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
-            <li class="breadcrumb-item"><a href="{{route('modlitwy')}}" class="color-glowny">Modlitwy</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('modlitwy')}}" class="color-glowny" rel="canonical">Modlitwy</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">{{$modlitwa->nazwa}}</li>
         </ol>

@@ -40,6 +40,10 @@
     gtag('config', 'G-Q01DL1L1FM');
 </script>
 <body >
+@if(isset($strona_glowna))
+    <p style="font-size: xx-small" class="m-0">Portal poświęcony św. Andrzejowi Boboli - życie, męka, kult, modlitwy, przesłanie, intencje</p>
+
+@endif
 
 {{--
 Święty Michale Archaniele,
@@ -68,7 +72,7 @@
             <img src="{{ URL::asset('/stat/logoAndrzejBobolaInfo.webp')}}"
                  width="95" height="100"
                  title="logoAndrzejBobolaInfo"
-                 alt="sw-Andrzej-Bobola-logo-portalu-AndrzejBobola.info"
+                 alt="Portal poświęcony św. Andrzejowi Boboli"
                  >
         </a>
         <!-- Toggle button -->

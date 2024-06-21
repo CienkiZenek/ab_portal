@@ -16,8 +16,8 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
-            <li class="breadcrumb-item"><a href="{{route('filmy')}}" class="color-glowny">Filmy</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('filmy')}}" class="color-glowny" rel="canonical">Filmy</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">{!!$film->tytul!!}</li>
         </ol>

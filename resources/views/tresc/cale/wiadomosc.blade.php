@@ -15,8 +15,8 @@
     {{-- breadcrumb--}}
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny">Strona główna</a></li>
-            <li class="breadcrumb-item"><a href="{{route('wiadomosci')}}" class="color-glowny">Aktualności</a></li>
+            <li class="breadcrumb-item"><a href="{{route('StronaGlowna')}}" class="color-glowny" rel="canonical">Strona główna</a></li>
+            <li class="breadcrumb-item"><a href="{{route('wiadomosci')}}" class="color-glowny" rel="canonical">Aktualności</a></li>
 
             <li class="breadcrumb-item active" aria-current="page">{!!$wiadomosc->tytul!!}</li>
         </ol>

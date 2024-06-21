@@ -1,6 +1,6 @@
 @extends('szablon')
-@section('title', 'AndrzejBobola.info')
-@section('description', 'Portal poświęcony św. Andrzejowi Boboli')
+@section('title', 'Portal poświęcony św. Andrzejowi Boboli')
+@section('description', 'Św. Andrzej Bobola - życie, męka, kult, modlitwy, przesłanie, intencje')
 @section('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych')
 @section('tresc')
 
