@@ -186,5 +186,17 @@
 
 @include('dodatki.ksiazkaGlowna')
 
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
 
+            <div style="position: relative; width: 100%; height: 700px; overflow: hidden;" class="shadow-5">
+                <iframe style="position: absolute; top:0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;" src="https://zrzutka.pl/jgfe8g/widget/23" frameborder="0" scrolling="no">
+
+                </iframe>
+            </div>
+
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
 @endsection

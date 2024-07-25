@@ -36,6 +36,19 @@
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('wiadomosci')}}" class="color-glowny" rel="canonical">Aktualności</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('artykuly')}}" class="color-glowny" rel="canonical">Artykuły</a></li>
                 <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/dlaczego-wlasnie-andrzej-bobola" class="color-glowny" rel="canonical">Dlaczego Andrzej Bobola?</a></li>
+
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/polska-pielgrzymka-prosi-papieza-o-relikwie-sw-andrzeja-boboli-7-czerwca-1938" class="color-glowny" rel="canonical">Polska pielgrzymka prosi papieża o relikwie św. Andrzeja Boboli (7 czerwca 1938)</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/pozegnanie-relikwii-sw-andrzeja-boboli-przez-rzym-8-czerwca-1938-opis-galeria" class="color-glowny" rel="canonical">Pożegnanie relikwii św. Andrzeja Boboli przez Rzym – 8 czerwca 1938</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/powitanie-relikwii-sw-andrzeja-boboli-na-polskiej-ziemi-11-czerwca-1938-opis-i-galeria" class="color-glowny" rel="canonical">Powitanie relikwii św. Andrzeja Boboli na polskiej ziemi – 11 czerwca 1938</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/relikwie-sw-andrzeja-boboli-w-oswiecimiu-11-czerwca-1938" class="color-glowny" rel="canonical">Relikwie św. Andrzeja Boboli w Oświęcimiu – 11 czerwca 1938</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/relikwie-sw-andrzeja-boboli-w-krakowie-11-13-czerwca-1938" class="color-glowny" rel="canonical">Relikwie św. Andrzeja Boboli w Krakowie 11-13 czerwca 1938</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/relikwie-sw-andrzeja-boboli-w-poznaniu-13-17-czerwca-1938-galeria" class="color-glowny" rel="canonical">Relikwie św. Andrzeja Boboli w Poznaniu 13-17 czerwca 1938</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/relikwie-sw-andrzeja-boboli-w-warszawie-17-19-czerwca-1938" class="color-glowny" rel="canonical">Relikwie św. Andrzeja Boboli w Warszawie (17-19 czerwca 1938)</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/relikwie-sw-andrzeja-boboli-w-warszawie-20-czerwca-1938" class="color-glowny" rel="canonical">Relikwie św. Andrzeja Boboli w Warszawie (20 czerwca 1938)</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/profanacja-relikwii-andrzeja-boboli-przez-bolszewikow-23-czerwca-1922" class="color-glowny" rel="canonical">Profanacja relikwii Andrzeja Boboli przez bolszewików 23 czerwca 1922</a></li>
+                <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="/artykul/wywiezienie-przez-bolszewikow-relikwii-bl-andrzeja-boboli-z-polocka-do-muzeum-w-moskwie-20-lipca-1922" class="color-glowny" rel="canonical">Wywiezienie przez bolszewików relikwii bł. Andrzeja Boboli z Połocka do muzeum w Moskwie – 20 lipca 1922</a></li>
+
+
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('biografia')}}" class="color-glowny" rel="canonical">Życi i kult</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('biogram')}}" class="color-glowny" rel="canonical">Biogram</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('IntencjeSwiadectwa')}}" class="color-glowny" rel="canonical">Intencje i świadectwa</a></li>
@@ -61,6 +74,7 @@
                 <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('publikacjeKsiazka')}}" class="color-glowny" rel="canonical">Publikacje o książce</a></li>
                 <li class="ms-4"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('fragmentKsiazki')}}" class="color-glowny" rel="canonical">Fragment książki</a></li>
 
+                <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('wsparcie')}}" class="color-glowny" rel="canonical">Wsparcie dla portalu</a></li>
                 <li class="ms-2"><i class="fas fa-long-arrow-alt-right me-2 text-info"></i><a href="{{route('kontakt')}}" class="color-glowny" rel="canonical">Formularz kontaktowy</a></li>
 
 

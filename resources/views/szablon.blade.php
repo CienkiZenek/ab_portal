@@ -116,6 +116,11 @@
                     <a class="nav-link text-white" href="{{route('modlitwy')}}"  rel="canonical">{{--<i class="fas fa-hands-praying"></i>--}} Modlitwy</a>
                 </li>
             </ul>
+            {{--<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="{{route('wsparcie')}}"  rel="canonical">--}}{{--<i class="fas fa-hands-praying"></i>--}}{{-- Wsparcie</a>
+                </li>
+            </ul>--}}
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link text-white" href="{{route('relikwie')}}"  rel="canonical">{{--<i class="fas fa-hands-praying"></i>--}} Relikwie</a>
@@ -251,18 +256,6 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
 
-  {{--  <div class="mb-3"></div>
-    <div class="row border border-1 p-2 bg-light rounded-1 mt-4 mb-7">
-        <div class="col-lg-12 col-md-12 col-sm-12 fs-6">
-            --}}{{--wsparcie--}}{{--
-            Wsparcie Patronite.pl
-            --}}{{--koniec wsparcie--}}{{--
-        </div>
-
-
-    </div>
-    <div class="mb-3"></div>
-    --}}
 
 
     <button onclick="topFunction()" id="myBtn" title="Do góry" data-mdb-ripple-init data-mdb-ripple-color="white">&nbsp;<i class="fas fa-arrow-up-long fa-2x"></i>&nbsp;{{--Do góry--}}</button>
@@ -307,6 +300,7 @@
 
                     <ul class="list-unstyled">
 
+                        <li><i class="fas fa-coins fa-lg"></i>  <a href="{{route('wsparcie')}}" class="text-white" rel="canonical">Wsparcie dla portalu</a></li>
                         <li><i class="fas fa-sitemap fa-lg"></i>  <a href="{{route('mapaStrony')}}" class="text-white" rel="canonical">Mapa strony</a></li>
                         <li><i class="fas fa-book fa-lg"></i>  <a href="{{route('naszaKsiazka')}}" class="text-white" rel="canonical">&nbsp;Książka "Boży wojownik"</a></li>
 

@@ -81,10 +81,16 @@ $kalendariumPojutrze=GlownaServices::kalendariumNaPoJutrze();
         return view('tresc.podstrony.intencja', );
     }
 
+    public function wsparcie(){
+
+        return view('tresc.podstrony.wsparcie', );
+    }
     public function oStronie(){
 
         return view('tresc.podstrony.oStronie', );
     }
+
+
 
     public function mapaStrony(){
 
