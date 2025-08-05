@@ -3,8 +3,6 @@
 @section('description', 'Św. Andrzej Bobola - życie, męka, kult, modlitwy, przesłanie, intencje')
 @section('keywords', 'Bobola, Andrzej Bobola, św. Andrzej Bobola, kult świętych, hagiografia, żywoty świętych')
 @section('tresc')
-
-
     <div class="row mb-4">
         <div class="col-12 color-glowny" style="font-size: small">
             Św. Andrzej Bobola - życie, męka, kult, modlitwy, przesłanie, intencje
@@ -185,7 +183,6 @@
 
 
 @include('dodatki.ksiazkaGlowna')
-
     <div class="row">
         <div class="col-lg-2"></div>
         <div class="col-lg-8">
@@ -195,7 +192,6 @@
 
                 </iframe>
             </div>
-
         </div>
         <div class="col-lg-2"></div>
     </div>

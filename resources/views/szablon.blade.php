@@ -150,7 +150,7 @@
                             <a class="dropdown-item" href="{{route('filmy')}}" rel="canonical">Filmy</a>
                         </li>
 
-                        <li>
+                        <li>fda
                             <a class="dropdown-item" href="{{route('zasoby')}}" rel="canonical">Zdjęcia, dokumenty, książki</a>
                         </li>
                         <li>
@@ -215,9 +215,7 @@
                 &nbsp;&nbsp;@include('komponenty.socialPrzyciskiNiebieskie')
 
             </div>
-            {{--<div class="d-flex justify-content-end me-1 color-glowny">{!!App\Services\GlownaServices::datownik()!!}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;@include('komponenty.socialPrzyciskiNiebieskie')
-            </div>--}}
+
             <div class="d-none d-lg-block">
                 <div class="d-flex justify-content-end me-1 color-glowny">{!!App\Services\GlownaServices::datownik()!!}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;@include('komponenty.socialPrzyciskiNiebieskie')
@@ -280,10 +278,12 @@
                     <div class="mt-3">
                         <a href="https://twitter.com/@BobolaInfo" target="_blank"><i class="fa-brands fa-x-twitter fa-lg text-white"></i></a>
                         <a href="https://www.facebook.com/AndrzejaBobolaInfo/" target="_blank" class="ms-2"><i class="fab fa-facebook fa-lg text-white"></i></a>
-                        {{--<a href="https://www.instagram.com/andrzejbobolainfo/"  target="_blank" class="ms-2" ><i class="fab fa-instagram fa-lg text-white"></i></a>--}}
+                        <a href="https://www.instagram.com/andrzejbobola.info/"  target="_blank" class="ms-2" ><i class="fab fa-instagram fa-lg text-white"></i></a>
                         <a href="https://www.youtube.com/@AndrzejBobolaInfo"  target="_blank" class="ms-2" ><i class="fa-brands fa-youtube fa-lg text-white"></i></a>
                         <a href="https://www.tiktok.com/@andrzejbobolainfo"  target="_blank" class="ms-2" ><i class="fab fa-tiktok fa-lg text-white"></i></a>
-                       </div>
+                        <a href="https://open.spotify.com/show/5aK3eXbi7TNF5nrQ3uWgHh"  target="_blank" class="ms-2" ><i class="fab fa-spotify fa-lg text-white"></i></a>
+                        <a href="https://podcasts.apple.com/us/podcast/św-andrzej-bobola-życie-męczeństwo-kult/id1817336076"  target="_blank" class="ms-2" ><i class="fab fa-apple fa-lg text-white"></i></a>
+                    </div>
 
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 ">
@@ -311,7 +311,7 @@
         </div>
     </div>
 
-    <div class="text-center p-2 fs-6" style="background-color: rgba(0, 0, 0, 0.2);"> &copy; 2024 AndrzejBobola.info </div>
+    <div class="text-center p-2 fs-6" style="background-color: rgba(0, 0, 0, 0.2);"> &copy; 2024-{!!App\Services\GlownaServices::rok()!!}&nbsp; AndrzejBobola.info </div>
 </footer>
 </body>
 <script src="{{ URL::asset('/js/jquery-3.7.1.min.js')}}"></script>

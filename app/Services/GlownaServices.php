@@ -68,7 +68,11 @@ class GlownaServices
 
 
     }
-
+    public static function rok()
+    {
+        $dzis = Carbon::now();
+        return $dzis->year;
+    }
     public static function datownik()
     {
         $dzis = Carbon::now();
